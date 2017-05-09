@@ -8,10 +8,11 @@
 // @include fontFace (fontello, /fontello, null, null, eot woff ttf svg);
 
 
- @include fontFace (Lato-Regular, Lato-Regular, null, null, ttf otf);
+ @include fontFace (Lato-Regular, Lato-Regular, null, null, ttf);
  @include fontFace (Lato-Bold, Lato-Bold, null, null, ttf);
  @include fontFace (Lato-Black, Lato-Black, null, null, ttf);
  @include fontFace (Airways, Airways, null, null, ttf);
+ @include fontFace (fontello, fontello, null, null, eot woff ttf svg);
 
 
 //------FONT-SIZE
@@ -22,21 +23,20 @@ body {
     color: black;
 }
 
-$baseFontSize: 10; // DO NOT CHANGE THIS
+$baseFontSize: 10px; // DO NOT CHANGE THIS
 
 html {
-    $fontSizePX: $baseFontSize + 'px';
-    font-size  : $fontSizePX;
+    font-size  : $baseFontSize;
   //change this part
-    @include breakpoint (desktop--Large) {
-        font-size: 0.52083333vw; //10px
-    }
-    @include breakpoint (lapTop) {
-        font-size: 0.9765625vw;//10px
-    }
-    @include breakpoint (mobile) {
-        font-size: 1.303781vw;
-    }
+    // @include breakpoint (desktop--Large) {
+    //     font-size: 0.52083333vw; //10px
+    // }
+    // @include breakpoint (lapTop) {
+    //     font-size: 0.9765625vw;//10px
+    // }
+    // @include breakpoint (mobile) {
+    //     font-size: 1.303781vw;
+    // }
 }
 
 

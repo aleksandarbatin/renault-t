@@ -1,0 +1,18 @@
+//-------------------------
+//-------------------HEADER  navigation
+//-------------------------
+
+&__navigation > li {
+	margin-right: 5.5rem;
+	font-family: $baseFont--Bold;
+	font-size: 1.2rem;
+	color: $c-yellow;
+	text-transform: uppercase;
+	&:nth-of-type(3) {
+		margin-right: 28.5rem;
+	}
+
+	.navigation__submenu {
+		display: none;
+	}
+}

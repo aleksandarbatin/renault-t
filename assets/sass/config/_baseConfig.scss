@@ -19,6 +19,9 @@
 html {
 	overflow-y: scroll;
 }
+ul li {
+    display: inline-block;
+}
 
 html, body {
     width: 100%;
@@ -33,6 +36,12 @@ img {
 a {
     outline: none;
     text-decoration: none;
+}
+
+.fontelloIcon {
+    font-family: 'fontello';
+    font-weight: normal;
+    font-style: normal;
 }
 
 // WEBKIT HACKS

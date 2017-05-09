@@ -15,7 +15,9 @@
 @import 'mixins/placeholder';
 @import 'mixins/fontFace';
 @import 'mixins/gradient';
+@import 'mixins/vendor-prefixes';
 @import 'mixins/absolute-center';
+
 
 //------MAIN CONFIG
 @import 'config/reset';
@@ -24,6 +26,7 @@
 @import 'config/helpers';
 
 //------LAYOUTS
+@import 'layouts/siteWrapper';
 @import 'layouts/sectionContainer';
 @import 'layouts/mainContent';
 

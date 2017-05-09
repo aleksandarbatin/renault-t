@@ -2,22 +2,20 @@
 //----------------VARIABLES
 //-------------------------
 
-//-----COLORS ver--PDF
-
+//-----COLORS
 $c-black           : #000;
 $c-white           : #fff;
-$c-shadowBlack     : #101010;
-$c-shadesNero      : #222222;
-$c-lightGray       : #333;
-$c-btnColor        : #14C8FB;
-$c-languageLinks   : #5c5c5c;
-$c-battleshipGrey  : #595B58;
-$c-suvaGray        : #8C8C8C;
+$c-whiteSmoke      : #f6f6f6;
+$c-lightGrey       : #8b8b8b;
+$c-mediumGray      : #7e7e7e;
+$c-darkGrey        : #404040;
+$c-yellow          : #ffcc33;
+
 
 //-----PATHS
 $fontBaseUrl  : "http://static1.webedia.fr/fonts/";
-$localFontBase: "/dist/fonts/";
-$imgBaseUrl   : "/web/skins/default/";
+$localFontBase: "/fonts/";
+$imgBaseUrl   : "/images/";
 
 
 //------DIMENSIONS
@@ -28,11 +26,12 @@ $fullHeight: 100%;
 //------FONT
 $fontDefault     : Arial, Helvetica, Tahoma, sans-serif;
 $baseFont: 'Lato-Regular', $fontDefault;
+$baseFont--Bold: 'Lato-Bold';
+$baseFont--Black: 'Lato-Black';
 
 
 
 //------MEDIA QUERIES
-$widescreen      : 1600px;
 $desktop--Large  : 1440px;
 $desktop         : 1250px;
 $lapTop          : 1024px;

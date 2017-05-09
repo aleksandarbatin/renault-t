@@ -1,3 +1,41 @@
 //-------------------------
 //----------- HEADER
 //-------------------------
+
+.header {
+	padding: 2rem 0;
+	&-holder {
+		height: 6.5rem;
+	}
+	position: fixed;
+	width: 100%;
+	left: 0;
+	right: 0;
+	height: 6.5rem;
+	text-align: center;
+	background-color: $c-black;
+	
+	&__social {
+		float: left;
+		margin-left: 3rem;
+		li {
+			margin-right: 3rem;
+		}
+		.fontelloIcon {
+			font-size: 2rem;
+			color: $c-white;
+		}
+	}
+
+	&__logo {
+		@include absolute(center);
+		top: 6rem;
+	}
+	&__search {
+		float: right;
+		img {
+			display: inline-block;
+		}
+	}
+	@import "navigation";
+}
