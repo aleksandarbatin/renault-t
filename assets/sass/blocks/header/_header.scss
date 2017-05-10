@@ -6,6 +6,9 @@
 	padding: 2rem 0;
 	&-holder {
 		height: 6.5rem;
+		@include breakpoint(tablet) {
+			height: 8.5rem;
+		}
 	}
 	position: fixed;
 	width: 100%;
@@ -14,27 +17,87 @@
 	height: 6.5rem;
 	text-align: center;
 	background-color: $c-black;
+	@include breakpoint(tablet) {
+		height: 8.5rem;
+	}
 	
 	&__social {
 		float: left;
 		margin-left: 3rem;
+		@include breakpoint(tablet) {
+			display: none;
+		}
 		li {
 			margin-right: 3rem;
 		}
 		.fontelloIcon {
-			font-size: 2rem;
+			font-size: 1.8rem;
 			color: $c-white;
 		}
+		.fontelloIcon.icon-youtube-play {
+			position: relative;
+			top: 0.2rem;
+			font-size: 2rem;
+		}
+	}
+
+	&__btnMenu {
+		display: none;
+		@include breakpoint(tablet) {
+			display: block;
+			float: left;
+			margin-top: 0.4rem;
+			margin-left: 4.5rem;
+			cursor: pointer;
+		}
+		.openBtn {
+			display: block;
+		}
+		.closeBtn {
+		    position: relative;
+			top: -0.3rem;
+			display: none;
+			width: 4.5rem;
+		}
+		img {
+			width: 5.3rem;
+		}
+	}
+
+	&__closeMenu {
+		display: none;
 	}
 
 	&__logo {
 		@include absolute(center);
 		top: 6rem;
+		@include breakpoint(tablet) {
+			display: none;
+		}
+		img {
+			width: 20.7rem;
+		}
+		&--device {
+			display: none;
+			@include breakpoint(tablet) {
+				display: block;
+			}
+			@extend .header__logo;
+			img {
+				width: 27.7rem;
+			}
+		}
 	}
 	&__search {
-		float: right;
+		position: absolute;
+	    top: 2.5rem;
+	    right: 4rem;
 		img {
 			display: inline-block;
+			width: 1.6rem;
+			@include breakpoint(tablet) {
+				width: 3.5rem;
+			}
 		}
 	}
 	@import "navigation";

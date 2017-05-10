@@ -28,15 +28,15 @@ $baseFontSize: 10px; // DO NOT CHANGE THIS
 html {
     font-size  : $baseFontSize;
   //change this part
-    // @include breakpoint (desktop--Large) {
-    //     font-size: 0.52083333vw; //10px
-    // }
-    // @include breakpoint (lapTop) {
-    //     font-size: 0.9765625vw;//10px
-    // }
-    // @include breakpoint (mobile) {
-    //     font-size: 1.303781vw;
-    // }
+    @include breakpoint (desktop) {
+        font-size: 0.6944444444vw; //10px - 1440px
+    }
+    @include breakpoint (tablet) {
+        font-size: 1.30208333333vw;//10px - 768px
+    }
+    @include breakpoint (mobile) {//10px - 640px
+        font-size: 1.5625vw;
+    }
 }
 
 

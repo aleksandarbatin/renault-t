@@ -11,23 +11,17 @@
 
 
 @mixin breakpoint($point) {
-     @if $point == widescreen {//min-width = 1600px
-        @media (min-width: $widescreen)                            { @content; }
+    @if $point == desktop {//max-width = 1440px
+        @media (max-width: $desktop)                               { @content; }
     }
-     @if $point == desktop--Large {//min-width = 1024px
-        @media (min-width: $lapTop)                               { @content; }
-    }
-    @else if $point == lapTop {//max-width = 1024px
-        @media (max-width: $lapTop)                             { @content; }
-    }
-    @else if $point == tablet {//max-width = 768px
+    @else if $point == tablet {//max-width = 1023px
         @media (max-width: $tablet)                             { @content; }
+    }
+    @else if $point == mobile {//max-width = 767px
+        @media (max-width: $mobile)                             { @content; }
     }
     @if $point == exeptGadgets {
         @media (min-width: $tablet + 1)                     { @content; }
-    }
-    @else if $point == mobile {
-        @media (max-width: $mobile)                       { @content; }
     }
     @else if $point == mobile--XL {
         @media (max-width: $mobile--XL)                     { @content; }
@@ -36,11 +30,6 @@
 
 
 //------MEDIA QUERIES
-$widescreen      : 1600px;
-$desktop--Large  : 1440px;
-$desktop         : 1250px;
-$lapTop          : 1024px;
-$tabletLandscape : 990px;
-$tablet          : 768px;
+$desktop         : 1440px;
+$tablet          : 1023px;
 $mobile          : 767px;
-$mobile--XL      : 640px;

@@ -5,6 +5,7 @@
 //-----COLORS
 $c-black           : #000;
 $c-white           : #fff;
+$c-whiteWhisper    : #ececec;
 $c-whiteSmoke      : #f6f6f6;
 $c-lightGrey       : #8b8b8b;
 $c-mediumGray      : #7e7e7e;
@@ -28,15 +29,12 @@ $fontDefault     : Arial, Helvetica, Tahoma, sans-serif;
 $baseFont: 'Lato-Regular', $fontDefault;
 $baseFont--Bold: 'Lato-Bold';
 $baseFont--Black: 'Lato-Black';
+$styleFont--airways: 'Airways';
 
 
 
 //------MEDIA QUERIES
-$desktop--Large  : 1440px;
-$desktop         : 1250px;
-$lapTop          : 1024px;
-$tabletLandscape : 990px;
-$tablet          : 768px;
+$desktop         : 1440px;
+$tablet          : 1023px;
 $mobile			 : 767px;
-$mobile--XL      : 640px;
-$mobile--L       : 425px;
+

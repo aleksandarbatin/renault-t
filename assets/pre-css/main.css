@@ -173,6 +173,15 @@ body {
 
 html {
   font-size: 10px; }
+  @media (max-width: 1440px) {
+    html {
+      font-size: 0.6944444444vw; } }
+  @media (max-width: 1023px) {
+    html {
+      font-size: 1.30208333333vw; } }
+  @media (max-width: 767px) {
+    html {
+      font-size: 1.5625vw; } }
 
 body {
   font-size: 100%;
@@ -213,6 +222,10 @@ h1 {
 .fright {
   float: right; }
 
+.siteWrapper {
+  position: relative;
+  overflow: hidden; }
+
 .header {
   padding: 2rem 0;
   position: fixed;
@@ -224,15 +237,48 @@ h1 {
   background-color: #000; }
   .header-holder {
     height: 6.5rem; }
+    @media (max-width: 1023px) {
+      .header-holder {
+        height: 8.5rem; } }
+  @media (max-width: 1023px) {
+    .header {
+      height: 8.5rem; } }
   .header__social {
     float: left;
     margin-left: 3rem; }
+    @media (max-width: 1023px) {
+      .header__social {
+        display: none; } }
     .header__social li {
       margin-right: 3rem; }
     .header__social .fontelloIcon {
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: #fff; }
-  .header__logo {
+    .header__social .fontelloIcon.icon-youtube-play {
+      position: relative;
+      top: 0.2rem;
+      font-size: 2rem; }
+  .header__btnMenu {
+    display: none; }
+    @media (max-width: 1023px) {
+      .header__btnMenu {
+        display: block;
+        float: left;
+        margin-top: 0.4rem;
+        margin-left: 4.5rem;
+        cursor: pointer; } }
+    .header__btnMenu .openBtn {
+      display: block; }
+    .header__btnMenu .closeBtn {
+      position: relative;
+      top: -0.3rem;
+      display: none;
+      width: 4.5rem; }
+    .header__btnMenu img {
+      width: 5.3rem; }
+  .header__closeMenu {
+    display: none; }
+  .header__logo, .header__logo--device {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -242,17 +288,203 @@ h1 {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     top: 6rem; }
+    @media (max-width: 1023px) {
+      .header__logo, .header__logo--device {
+        display: none; } }
+    .header__logo img, .header__logo--device img {
+      width: 20.7rem; }
+    .header__logo--device {
+      display: none; }
+      @media (max-width: 1023px) {
+        .header__logo--device {
+          display: block; } }
+      .header__logo--device img {
+        width: 27.7rem; }
   .header__search {
-    float: right; }
+    position: absolute;
+    top: 2.5rem;
+    right: 4rem; }
     .header__search img {
-      display: inline-block; }
-  .header__navigation > li {
+      display: inline-block;
+      width: 1.6rem; }
+      @media (max-width: 1023px) {
+        .header__search img {
+          width: 3.5rem; } }
+  .header__navigation {
+    position: relative;
+    top: 0.9rem; }
+    @media (max-width: 1023px) {
+      .header__navigation {
+        display: none;
+        width: 70%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        padding-top: 12.5rem;
+        padding-left: 6.5rem;
+        padding-bottom: 13rem;
+        overflow: auto;
+        background-color: #fff;
+        border-top: 8.5rem solid #000;
+        z-index: -1; }
+        .header__navigation__curtain {
+          display: none;
+          height: 100%;
+          width: 30%;
+          position: absolute;
+          right: 0;
+          background-color: rgba(0, 0, 0, 0.5); } }
+    .header__navigation .social {
+      display: none; }
+      @media (max-width: 1023px) {
+        .header__navigation .social {
+          display: block;
+          margin-top: 12.5rem; } }
+    .header__navigation .header__social--devices .fontelloIcon {
+      margin-right: 2rem;
+      font-size: 4rem;
+      color: #000; }
+    .header__navigation .header__social--devices .icon-facebook {
+      margin-right: 6rem;
+      font-size: 3.5rem; }
+    .header__navigation .down-open {
+      position: relative;
+      top: -0.2rem;
+      display: none;
+      font-size: 1.5rem;
+      margin-right: 3rem;
+      color: #ffcc33; }
+      @media (max-width: 1023px) {
+        .header__navigation .down-open {
+          display: inline-block; } }
+  .header__navigation > .menu {
     margin-right: 5.5rem;
+    padding-bottom: 2rem;
     font-family: "Lato-Bold";
     font-size: 1.2rem;
     color: #ffcc33;
     text-transform: uppercase; }
-    .header__navigation > li:nth-of-type(3) {
+    .header__navigation > .menu:nth-of-type(3) {
       margin-right: 28.5rem; }
-    .header__navigation > li .navigation__submenu {
-      display: none; }
+    @media (max-width: 1023px) {
+      .header__navigation > .menu {
+        display: block;
+        margin-bottom: 5.5rem;
+        font-size: 2.2rem;
+        color: #000;
+        text-align: left; } }
+    .header__navigation > .menu span {
+      cursor: pointer; }
+    .header__navigation > .menu:hover span {
+      color: #fff;
+      border-bottom: 0.15rem solid #fff;
+      -webkit-transition: all 0.3s ease-in-out;
+      -khtml-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+      @media (max-width: 1023px) {
+        .header__navigation > .menu:hover span {
+          color: #000; } }
+    .header__navigation > .menu:hover .navigation__submenu {
+      display: block; }
+    .header__navigation > .menu .navigation__submenu {
+      display: none;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 3rem;
+      background-color: #fff;
+      overflow: hidden; }
+      @media (max-width: 1023px) {
+        .header__navigation > .menu .navigation__submenu {
+          position: static; } }
+    .header__navigation > .menu .submenu__column {
+      position: relative;
+      float: left;
+      width: 25%; }
+      @media (max-width: 1023px) {
+        .header__navigation > .menu .submenu__column {
+          float: none;
+          width: 100%; } }
+      .header__navigation > .menu .submenu__column--wide {
+        float: left;
+        width: 50%; }
+      .header__navigation > .menu .submenu__column:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 50rem;
+        width: 0.2rem;
+        background-color: #ececec; }
+        @media (max-width: 1023px) {
+          .header__navigation > .menu .submenu__column:after {
+            display: none; } }
+      .header__navigation > .menu .submenu__column .submenu__row {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        padding-left: 12.5rem; }
+        @media (max-width: 1023px) {
+          .header__navigation > .menu .submenu__column .submenu__row {
+            padding-top: 4.5rem;
+            padding-bottom: 0;
+            padding-left: 5rem; } }
+        .header__navigation > .menu .submenu__column .submenu__row li {
+          display: block;
+          padding-bottom: 6rem;
+          font-family: "Lato-Black";
+          font-size: 1.4rem;
+          color: #000;
+          text-align: left; }
+          @media (max-width: 1023px) {
+            .header__navigation > .menu .submenu__column .submenu__row li {
+              padding-bottom: 4.5rem;
+              font-family: "Lato-Regular", Arial, Helvetica, Tahoma, sans-serif;
+              font-size: 2.2rem;
+              text-transform: initial; } }
+        .header__navigation > .menu .submenu__column .submenu__row li:last-child {
+          padding-bottom: 0; }
+    .header__navigation > .menu .topArticles {
+      padding-top: 8rem;
+      padding-left: 10rem;
+      text-align: left; }
+      @media (max-width: 1023px) {
+        .header__navigation > .menu .topArticles {
+          display: none; } }
+      .header__navigation > .menu .topArticles h2 {
+        margin-bottom: 1rem;
+        font-family: "Lato-Black";
+        font-size: 2.6rem;
+        color: #000; }
+        .header__navigation > .menu .topArticles h2 .style {
+          color: #000;
+          text-transform: initial;
+          margin-left: 1rem; }
+      .header__navigation > .menu .topArticles__teaser {
+        display: table;
+        float: left;
+        width: 45%;
+        margin-bottom: 1.8rem; }
+        .header__navigation > .menu .topArticles__teaser h3 {
+          position: relative;
+          left: 1.5rem;
+          font-family: "Lato-Bold";
+          font-size: 1.3rem;
+          color: #000;
+          text-transform: initial;
+          display: table-cell;
+          vertical-align: top; }
+        .header__navigation > .menu .topArticles__teaser img {
+          display: table-cell;
+          vertical-align: top;
+          width: 6.8rem; }
+
+.strong {
+  font-family: "Lato-Black"; }
+
+.style {
+  font-family: "Airways"; }
