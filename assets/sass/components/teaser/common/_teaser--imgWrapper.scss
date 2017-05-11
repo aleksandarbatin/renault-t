@@ -1,0 +1,19 @@
+// //------------------------------
+// //---------TEASER IMG WRAPPERE
+// //-----------------------------
+
+.teaser__imgWrapper {
+	position: relative;
+	width: 100%;
+	img {
+		width: 100%;
+	}
+	.teaser__tag {
+		position: absolute;
+		bottom: 0;
+		padding: 1rem 2rem;
+		font-family: $baseFont--Bold;
+		font-size: 1.2rem;
+		background-color: $c-yellow;
+	}
+}

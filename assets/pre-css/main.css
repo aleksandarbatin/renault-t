@@ -173,9 +173,9 @@ body {
 
 html {
   font-size: 10px; }
-  @media (max-width: 1440px) {
+  @media (max-width: 1700px) {
     html {
-      font-size: 0.6944444444vw; } }
+      font-size: 0.58823529411vw; } }
   @media (max-width: 1023px) {
     html {
       font-size: 1.30208333333vw; } }
@@ -225,6 +225,17 @@ h1 {
 .siteWrapper {
   position: relative;
   overflow: hidden; }
+
+.mainContent {
+  max-width: 1350px;
+  width: 80%;
+  margin: 0 auto; }
+
+.column, .mediaWall__column {
+  float: left;
+  width: 50%; }
+  .column article, .mediaWall__column article {
+    float: left; }
 
 .header {
   padding: 2rem 0;
@@ -530,11 +541,109 @@ h1 {
           vertical-align: top;
           width: 6.8rem; }
 
+.mediaWall {
+  position: relative;
+  padding-top: 7.6rem; }
+  .mediaWall .column--left {
+    margin-top: 16.5rem; }
+  .mediaWall__title {
+    position: absolute;
+    top: 24rem;
+    width: 20%;
+    font-size: 3rem;
+    text-transform: uppercase; }
+    .mediaWall__title .style {
+      text-transform: initial; }
+    .mediaWall__title .strong {
+      font-size: 3.2rem; }
+  .mediaWall.media--steps .teaserNarrow {
+    margin-top: 23rem;
+    margin-right: 2.5rem; }
+  .mediaWall.media--steps .teaserWide {
+    margin-left: 1.5rem;
+    margin-bottom: 7rem; }
+  .mediaWall.media--steps .teaserRight {
+    margin-left: 1.5rem; }
+  .mediaWall.media--wide .whiteSmoke-bg {
+    height: auto;
+    padding: 10rem 0;
+    overflow: hidden;
+    background-color: #f6f6f6; }
+  .mediaWall.media--wide .teaserPlain {
+    clear: both; }
+  .mediaWall.media--wide .mediaWall__title {
+    top: 5rem;
+    width: auto; }
+
 .strong {
   font-family: "Lato-Black"; }
 
 .style {
   font-family: "Airways"; }
+
+.teaser__introBox {
+  position: relative;
+  padding-top: 3.3rem; }
+  .teaser__introBox .teaser__title {
+    margin-bottom: 2.5rem;
+    font-family: "Lato-Black";
+    font-size: 1.8rem;
+    line-height: 1.4; }
+  .teaser__introBox .teaser__text {
+    font-family: "Lato-Regular", Arial, Helvetica, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    color: #7e7e7e; }
+
+.teaser__imgWrapper {
+  position: relative;
+  width: 100%; }
+  .teaser__imgWrapper img {
+    width: 100%; }
+  .teaser__imgWrapper .teaser__tag {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 2rem;
+    font-family: "Lato-Bold";
+    font-size: 1.2rem;
+    background-color: #ffcc33; }
+
+.teaserNarrow {
+  width: 23rem; }
+
+.teaserNarrow--big {
+  width: 40.5rem; }
+
+.teaserWide {
+  width: 57.8rem; }
+
+.teaserRight .teaser__imgWrapper {
+  width: 32rem;
+  float: left;
+  margin-right: 3rem; }
+
+.teaserRight .teaser__introBox {
+  padding-top: 0;
+  margin-right: 7rem; }
+
+.teaserFull {
+  width: 88%;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #fff; }
+  .teaserFull .teaser__imgWrapper {
+    float: right;
+    width: 83.6rem; }
+  .teaserFull .teaser__introBox {
+    display: inline-block;
+    width: 25%;
+    padding-top: 14.5rem;
+    padding-left: 9rem;
+    background-color: #fff; }
+    .teaserFull .teaser__introBox .teaser__title {
+      font-size: 2.8rem;
+      line-height: 1.2; }
 
 .slick-slider {
   position: relative;
@@ -689,6 +798,7 @@ h1 {
     position: relative;
     background-color: rgba(0, 0, 0, 0.6); }
     .hpViewer .hpSlider .slideBloc img {
+      width: 100%;
       opacity: 0.7; }
   .hpViewer .hpSlider .introBox__date {
     background-color: #ffcc33;

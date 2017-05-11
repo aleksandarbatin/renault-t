@@ -1,0 +1,23 @@
+// //------------------------------
+// //--------- media--wide  -- MEDIA WALL
+// //-----------------------------
+
+ //second HP media block with white-smoke background
+
+ &.media--wide {
+ 	.whiteSmoke-bg {
+ 		height: auto;
+ 		padding: 10rem 0;
+    	overflow: hidden;
+ 		background-color: $c-whiteSmoke;
+ 	}
+
+ 	.teaserPlain {
+ 		clear: both;
+ 	}
+
+ 	.mediaWall__title {
+ 		top: 5rem;
+    	width: auto;
+ 	}
+ } 

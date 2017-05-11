@@ -1,0 +1,26 @@
+// //------------------------------
+// //--------- TEASER FULL
+// //-----------------------------
+
+.teaserFull {
+	width: 88%;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: $c-white;
+	.teaser__imgWrapper {
+		float: right;
+		width: 83.6rem;
+	}
+	.teaser__introBox {
+		display: inline-block;
+		width: 25%;
+		padding-top: 14.5rem;
+		padding-left: 9rem;
+		background-color: $c-white;
+		.teaser__title {
+			font-size: 2.8rem;
+			line-height: 1.2;
+		}
+	}
+}

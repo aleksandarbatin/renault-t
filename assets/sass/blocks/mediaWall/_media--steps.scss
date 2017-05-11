@@ -1,0 +1,19 @@
+// //------------------------------
+// //--------- media--steps  --MEDIA WALL
+// //-----------------------------
+
+ //first HP media block 
+ 
+&.media--steps { 
+	.teaserNarrow {
+		margin-top: 23rem;
+		margin-right: 2.5rem; 
+	}
+	.teaserWide {
+		margin-left: 1.5rem;
+		margin-bottom: 7rem;
+	}
+	.teaserRight {
+		margin-left: 1.5rem;
+	}
+}

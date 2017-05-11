@@ -29,16 +29,26 @@
 @import 'layouts/siteWrapper';
 @import 'layouts/sectionContainer';
 @import 'layouts/mainContent';
+@import 'layouts/column';
 
 //------BLOCKS
 @import 'blocks/header/header';
 @import 'blocks/footer/footer';
+@import 'blocks/mediaWall/mediaWall';
 
 
 //------COMPONENTS
 
 @import 'components/commonStyle';
 @import 'components/btn';
+@import 'components/teaser/common/teaser--introBox';
+@import 'components/teaser/common/teaser--imgWrapper';
+@import 'components/teaser/teaserNarrow';
+@import 'components/teaser/teaserNarrow--big';
+@import 'components/teaser/teaserWide';
+@import 'components/teaser/teaserPlain';
+@import 'components/teaser/teaserRight';
+@import 'components/teaser/teaserFull';
 
 //------SLIDER±S
 

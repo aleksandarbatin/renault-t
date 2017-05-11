@@ -1,0 +1,32 @@
+// //------------------------------
+// //--------- MEDIA WALL
+// //-----------------------------
+
+.mediaWall {
+	position: relative;
+	padding-top: 7.6rem;
+
+	
+	&__column {
+		@extend .column;
+	}
+	.column--left {
+		margin-top: 16.5rem;
+	}
+	&__title {
+		position: absolute;
+		top: 24rem;
+		width: 20%;
+		font-size: 3rem;
+		text-transform: uppercase;
+		.style {
+			text-transform: initial;
+		}
+		.strong {
+			font-size: 3.2rem;
+		}
+	}
+	@import "media--steps";
+	@import "media--wide";
+}
+
