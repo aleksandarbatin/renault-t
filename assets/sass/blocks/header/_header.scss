@@ -4,6 +4,7 @@
 
 .header {
 	padding: 2rem 0;
+	z-index: 55;
 	&-holder {
 		height: 6.5rem;
 		@include breakpoint(tablet) {
@@ -47,20 +48,30 @@
 			display: block;
 			float: left;
 			margin-top: 0.4rem;
-			margin-left: 4.5rem;
+			margin-left: 6rem;
 			cursor: pointer;
+		}
+		@include breakpoint(mobile) {
+			margin-top: 1.4rem;
+			margin-left: 4rem;
 		}
 		.openBtn {
 			display: block;
 		}
 		.closeBtn {
 		    position: relative;
-			top: -0.3rem;
+			top: 0.7rem;
 			display: none;
-			width: 4.5rem;
+			width: 3rem;
+			@include breakpoint(mobile) {
+				top: -0.3rem;
+			}
 		}
 		img {
 			width: 5.3rem;
+			@include breakpoint(mobile) {
+				width: 3.3rem;
+			}
 		}
 	}
 
@@ -77,26 +88,50 @@
 		img {
 			width: 20.7rem;
 		}
-		&--device {
+		&--tablet {
 			display: none;
+			@extend .header__logo;
 			@include breakpoint(tablet) {
 				display: block;
 			}
-			@extend .header__logo;
+			@include breakpoint(mobile) {
+				display: none;
+			}
 			img {
 				width: 27.7rem;
 			}
 		}
-	}
+		&--mobile {
+			display: none;
+			top: 7.5rem;
+			@extend .header__logo;
+			@include breakpoint(mobile) {
+				display: block
+			}
+			img {
+				width: 23.7rem;
+			}
+		}
+ 	}
 	&__search {
 		position: absolute;
 	    top: 2.5rem;
 	    right: 4rem;
+	    @include breakpoint(tablet) {
+	    	top: 3rem;
+	    	right: 6rem;
+	    }
+	    @include breakpoint(mobile) {
+	    	right: 3rem;
+	    }
 		img {
 			display: inline-block;
 			width: 1.6rem;
 			@include breakpoint(tablet) {
 				width: 3.5rem;
+			}
+			@include breakpoint(mobile) {
+				width: 3rem;
 			}
 		}
 	}

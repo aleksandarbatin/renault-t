@@ -25,7 +25,14 @@
 			position: absolute;
 			right: 0;
 			background-color: rgba(0,0,0,0.5);
+			@include breakpoint(mobile) {
+	    		width: 15%;
+	    	}	
     	}
+    }
+    @include breakpoint(mobile) {
+    	padding-top:14.5rem;
+    	width: 85%;
     }
     .social {
 		display: none;
@@ -67,14 +74,22 @@
 	text-transform: uppercase;
 	&:nth-of-type(3) {
 		margin-right: 28.5rem;
+		@include breakpoint(tablet) {
+			margin-right: 0;
+		}
 	}
 	@include breakpoint(tablet) {
 		display: block;
-		margin-bottom: 5.5rem;
+		margin-bottom: 4rem;
+		margin-right: 0;
 		font-size: 2.2rem;
 		color: $c-black;
 		text-align: left;
 
+	}
+	@include breakpoint(mobile) {
+		margin-bottom: 5rem;
+		font-size: 2.8rem;
 	}
 	span {
 		cursor: pointer;

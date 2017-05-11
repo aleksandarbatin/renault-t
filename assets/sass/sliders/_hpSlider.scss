@@ -1,0 +1,160 @@
+// //------------------------------
+// //--------- HP SLIDER
+// //-----------------------------
+.hpViewer {
+	position: relative;
+	&__arrows {
+		@include absolute(center-vertical);
+		background-color: $c-yellow;
+		width: 5.5rem;
+		height: 5.5rem;
+		border-radius: 5.5rem;
+		cursor: pointer;
+		@include breakpoint(tablet) {
+			width: 2.5rem;
+			height: 2.5rem;
+			border-radius: 2.5rem;
+		}
+		@include breakpoint(mobile) {
+			display: none!important;
+		}
+		.fontelloIcon {
+			font-size: 1.5rem;
+			position: relative;
+			top: 37%;
+			@include breakpoint(tablet) {
+				font-size: 0.8rem;
+				top: 26%;
+			}
+			&.left {
+				left: 35%;
+			}
+			&.right {
+				right: -40%;
+			}
+		}
+		&.btn-prev {
+			left: 4.8rem;
+			@include breakpoint(tablet) {
+				left: 2rem;
+			}
+		}
+		&.btn-next {
+			right: 4.8rem;
+			@include breakpoint(tablet) {
+				right: 2rem;
+			}
+		}
+		&:hover {
+			background-color: $c-white;
+		}
+	}
+
+	.slideInfo {
+		position: absolute;
+		left: 15.5%;
+		bottom: 20%;
+		font-family: $baseFont--Bold;
+		font-size: 2.2rem;
+		letter-spacing: 0.5rem;
+		color: white;
+		
+		&-current {
+			color: $c-yellow;
+		}
+		@include breakpoint(tablet) {
+			bottom: 7%;
+			font-size: 1.2rem;
+		}
+		@include breakpoint(mobile) {
+			left: auto;
+			right: 10%;
+			bottom: 15%;
+			font-size: 2.4rem;
+		}
+	}
+
+	.hpSlider {
+		&__introBox {
+			position: absolute;
+			top: 40.5%;
+			left: 15.5%;
+			width: 65%;
+			@include breakpoint(mobile) {
+				top: 23.5%;
+				left: 6%;
+				width: 72%;
+			}
+
+		}
+		.slideBloc {
+			position: relative;
+			background-color: rgba(0,0,0,0.6);
+			img {
+				opacity: 0.7;
+			}
+		}
+		.introBox {
+			&__date {
+				background-color: $c-yellow;
+				font-family: $baseFont--Bold;
+				font-size: 1.2rem;
+				color: $c-black;
+				padding: 1rem 2rem;
+				text-transform: uppercase;
+				@include breakpoint(tablet) {
+					padding: 0.5rem 1.5rem;
+					font-size: 0.8rem;
+				}
+				@include breakpoint(mobile) {
+					padding: 1rem 2rem;
+					font-size: 1.2rem;
+				}
+			}
+			&__tag {
+				display: block;
+				margin-top: 3rem;
+				font-family: $baseFont--Black;
+				font-size: 3.6rem;
+				color: $c-yellow;
+				text-transform: uppercase;
+				@include breakpoint(tablet) {
+					margin-top: 2rem;
+					font-size: 1.6rem;
+				}
+				@include breakpoint(tablet) {
+					margin-top: 4rem;
+					font-size: 3rem;
+				}
+			}
+			&__title {
+				font-family: $baseFont--Black;
+				font-size: 7rem;
+				color: $c-white;
+				text-transform: uppercase;
+				@include breakpoint(tablet) {
+					font-size: 3.2rem;
+				}
+				@include breakpoint(tablet) {
+					font-size: 4rem;
+				}
+			}
+
+			&__subtitle {
+				font-family: $baseFont;
+				font-size: 3.2rem;
+				color: $c-white;
+				@include breakpoint(tablet) {
+					font-size: 1.6rem;
+				}
+				@include breakpoint(mobile) {
+					display: none;
+				}
+			}
+		}
+		
+	}
+
+
+
+}
