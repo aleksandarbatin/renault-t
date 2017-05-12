@@ -44,12 +44,24 @@
 			color: $c-white;
 		}
 	}
-	.slider__navigation {
-		.slideInfo {
+	.portraitSlider__navigation {
+		@extend .slider__navigation;
+		.portraitSlider__slideInfo {
+			@extend .slideInfo;
 			color: $c-white;
 		}
+		.portraitSlider__arrows {
+			@extend .slider__arrows;
+		}
 		.fontelloIcon {
+			font-size: 1.8rem;
 			color: $c-white;
+		}
+		.portrait-next {
+			@extend .btn-next;
+		}
+		.portrait-prev {
+			@extend .btn-prev;	
 		}
 	}
 }

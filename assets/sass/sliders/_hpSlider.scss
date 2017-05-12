@@ -55,14 +55,8 @@
 		position: absolute;
 		left: 15.5%;
 		bottom: 20%;
-		font-family: $baseFont--Bold;
 		font-size: 2.2rem;
-		letter-spacing: 0.5rem;
 		color: white;
-		
-		&-current {
-			color: $c-yellow;
-		}
 		@include breakpoint(tablet) {
 			bottom: 7%;
 			font-size: 1.2rem;
@@ -154,9 +148,5 @@
 				}
 			}
 		}
-		
 	}
-
-
-
 }

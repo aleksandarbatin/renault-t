@@ -643,28 +643,29 @@ h1 {
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out; } }
 
-.slider__navigation {
+.slider__navigation, .faqSlider__navigation, .portraitSlider .portraitSlider__navigation {
   position: absolute;
   top: 6.5rem;
   right: 5rem; }
-  .slider__navigation .fontelloIcon {
-    font-size: 1.8rem;
-    color: #404040; }
-  .slider__navigation .slider__arrows {
-    vertical-align: middle;
-    cursor: pointer; }
-    .slider__navigation .slider__arrows.btn-prev {
-      margin-right: 0.5rem; }
-    .slider__navigation .slider__arrows.btn-next {
-      margin-left: 0.5rem; }
-  .slider__navigation .slideInfo {
-    font-family: "Lato-Bold";
-    font-size: 1.4rem;
-    color: #404040;
-    letter-spacing: 0.5rem;
-    display: inline-block; }
-    .slider__navigation .slideInfo-current {
-      color: #ffcc33; }
+
+.slider__arrows, .faqSlider__navigation .faqSlider__arrows, .portraitSlider .portraitSlider__navigation .portraitSlider__arrows {
+  vertical-align: middle;
+  cursor: pointer; }
+
+.slideInfo, .faqSlider__navigation .faqSlider__slideInfo, .portraitSlider .portraitSlider__navigation .portraitSlider__slideInfo {
+  font-family: "Lato-Bold";
+  font-size: 1.4rem;
+  color: #404040;
+  letter-spacing: 0.5rem;
+  display: inline-block; }
+  .slideInfo-current, .faqSlider__navigation .faqSlideInfo-current {
+    color: #ffcc33; }
+
+.btn-prev, .faqSlider__navigation .faq-prev, .portraitSlider .portraitSlider__navigation .portrait-prev {
+  margin-right: 0.5rem; }
+
+.btn-next, .faqSlider__navigation .faq-next, .portraitSlider .portraitSlider__navigation .portrait-next {
+  margin-left: 0.5rem; }
 
 .teaser__introBox {
   position: relative;
@@ -880,34 +881,30 @@ h1 {
         left: 35%; }
       .hpViewer__arrows .fontelloIcon.right {
         right: -40%; }
-    .hpViewer__arrows.btn-prev {
+    .hpViewer__arrows.btn-prev, .faqSlider__navigation .hpViewer__arrows.faq-prev, .portraitSlider .portraitSlider__navigation .hpViewer__arrows.portrait-prev {
       left: 4.8rem; }
       @media (max-width: 1023px) {
-        .hpViewer__arrows.btn-prev {
+        .hpViewer__arrows.btn-prev, .faqSlider__navigation .hpViewer__arrows.faq-prev, .portraitSlider .portraitSlider__navigation .hpViewer__arrows.portrait-prev {
           left: 2rem; } }
-    .hpViewer__arrows.btn-next {
+    .hpViewer__arrows.btn-next, .faqSlider__navigation .hpViewer__arrows.faq-next, .portraitSlider .portraitSlider__navigation .hpViewer__arrows.portrait-next {
       right: 4.8rem; }
       @media (max-width: 1023px) {
-        .hpViewer__arrows.btn-next {
+        .hpViewer__arrows.btn-next, .faqSlider__navigation .hpViewer__arrows.faq-next, .portraitSlider .portraitSlider__navigation .hpViewer__arrows.portrait-next {
           right: 2rem; } }
     .hpViewer__arrows:hover {
       background-color: #fff; }
-  .hpViewer .slideInfo {
+  .hpViewer .slideInfo, .hpViewer .faqSlider__navigation .faqSlider__slideInfo, .faqSlider__navigation .hpViewer .faqSlider__slideInfo, .hpViewer .portraitSlider .portraitSlider__navigation .portraitSlider__slideInfo, .portraitSlider .portraitSlider__navigation .hpViewer .portraitSlider__slideInfo {
     position: absolute;
     left: 15.5%;
     bottom: 20%;
-    font-family: "Lato-Bold";
     font-size: 2.2rem;
-    letter-spacing: 0.5rem;
     color: white; }
-    .hpViewer .slideInfo-current {
-      color: #ffcc33; }
     @media (max-width: 1023px) {
-      .hpViewer .slideInfo {
+      .hpViewer .slideInfo, .hpViewer .faqSlider__navigation .faqSlider__slideInfo, .faqSlider__navigation .hpViewer .faqSlider__slideInfo, .hpViewer .portraitSlider .portraitSlider__navigation .portraitSlider__slideInfo, .portraitSlider .portraitSlider__navigation .hpViewer .portraitSlider__slideInfo {
         bottom: 7%;
         font-size: 1.2rem; } }
     @media (max-width: 767px) {
-      .hpViewer .slideInfo {
+      .hpViewer .slideInfo, .hpViewer .faqSlider__navigation .faqSlider__slideInfo, .faqSlider__navigation .hpViewer .faqSlider__slideInfo, .hpViewer .portraitSlider .portraitSlider__navigation .portraitSlider__slideInfo, .portraitSlider .portraitSlider__navigation .hpViewer .portraitSlider__slideInfo {
         left: auto;
         right: 10%;
         bottom: 15%;
@@ -1006,6 +1003,9 @@ h1 {
         font-size: 2.2rem; }
   .faqSlider .slick-list {
     overflow: visible; }
+  .faqSlider__navigation .fontelloIcon {
+    font-size: 1.8rem;
+    color: #404040; }
 
 .portraitSlider {
   position: relative;
@@ -1039,7 +1039,8 @@ h1 {
     .portraitSlider .teaser__introBox .teaser__text, .portraitSlider .teaser__introBox .testTeaser .test__text, .testTeaser .portraitSlider .teaser__introBox .test__text {
       margin-bottom: 5rem;
       color: #fff; }
-  .portraitSlider .slider__navigation .slideInfo {
+  .portraitSlider .portraitSlider__navigation .portraitSlider__slideInfo {
     color: #fff; }
-  .portraitSlider .slider__navigation .fontelloIcon {
+  .portraitSlider .portraitSlider__navigation .fontelloIcon {
+    font-size: 1.8rem;
     color: #fff; }

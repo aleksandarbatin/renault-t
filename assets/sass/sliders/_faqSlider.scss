@@ -30,4 +30,28 @@
 	.slick-list {
 		overflow: visible;
 	}
+
+	&__navigation {
+		@extend .slider__navigation;
+		.fontelloIcon {
+			font-size: 1.8rem;
+			color: $c-darkGrey; 
+		}
+		.faqSlider__arrows {
+			@extend .slider__arrows;
+		}
+	 		
+		.faqSlider__slideInfo {
+			@extend .slideInfo;
+		}
+		.faqSlideInfo-current {
+			@extend .slideInfo-current;
+		}
+		.faq-next {
+			@extend .btn-next;
+		}
+		.faq-prev {
+			@extend .btn-prev;	
+		}
+	}
 }
