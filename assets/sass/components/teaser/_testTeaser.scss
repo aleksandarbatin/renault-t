@@ -1,0 +1,40 @@
+//------------------------------
+//---------------- TEST TEASER
+//------------------------------
+
+.testTeaser {
+	width: 100%;
+	height: auto;
+	padding-top: 9.7rem;
+	overflow: hidden;
+	background-image:url("/images/testBg.png");
+	background-repeat: no-repeat;
+
+	.test {
+		&__introBox {
+			width: 30%;
+			margin: 0 auto;
+		}
+		&__title {
+			margin-bottom: 2.5rem;
+			font-size: 3rem;
+			text-transform: uppercase;
+			.strong{
+				font-size: 3.2rem;
+			}
+			.style {
+				text-transform: initial;
+			}
+		}
+		&__text {
+			margin-bottom: 3rem;
+			@extend .teaser__text;
+			color: $c-black;
+		}
+		&__promo {
+			float: left;
+			width: 33.33%;
+		}
+	}
+	
+}

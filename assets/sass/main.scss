@@ -41,19 +41,24 @@
 
 @import 'components/commonStyle';
 @import 'components/btn';
+@import 'components/sliderNavigation';
 @import 'components/teaser/common/teaser--introBox';
 @import 'components/teaser/common/teaser--imgWrapper';
 @import 'components/teaser/teaserNarrow';
+@import 'components/teaser/teaserNarrow--middle';
 @import 'components/teaser/teaserNarrow--big';
 @import 'components/teaser/teaserWide';
 @import 'components/teaser/teaserPlain';
 @import 'components/teaser/teaserRight';
 @import 'components/teaser/teaserFull';
+@import 'components/teaser/testTeaser';
 
 //------SLIDER±S
 
 @import 'sliders/slick';
 @import 'sliders/hpSlider';
 @import 'sliders/articleDiaporama';
+@import 'sliders/faqSlider';
+@import 'sliders/portraitSlider';
 
 

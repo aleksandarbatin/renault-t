@@ -5,9 +5,12 @@
 .teaserFull {
 	width: 88%;
 	height: auto;
-	overflow: hidden;
 	margin: 0 auto;
+	float: none!important;
+	margin-bottom: 0!important;
 	background-color: $c-white;
+	overflow: hidden;
+	@include vendor-prefixes(box-shadow, -18px 23px 54px 6px rgba(64,64,64,0.65));
 	.teaser__imgWrapper {
 		float: right;
 		width: 83.6rem;

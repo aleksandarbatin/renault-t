@@ -1,0 +1,24 @@
+// //------------------------------
+// //--------- media--floatRight  --MEDIA WALL
+// //-----------------------------
+
+//Third HP media block with teasers lean on right side
+
+&.media--floatRight {
+	.mediaWall__title {
+		top: 17rem;
+		left: 8rem;
+	}
+	.column--left {
+		position: relative;
+		left: 8rem;
+		margin-top: 21rem;
+	}
+	.column--right {
+		padding-left: 9rem;
+	}
+
+	.teaserNarrow--middle {
+		margin-right: 2.3rem;
+	}
+}

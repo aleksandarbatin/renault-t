@@ -1,0 +1,27 @@
+// //------------------------------
+// //--------- media--business  -- MEDIA WALL
+// //-----------------------------
+
+//HP business media section with yellow portrait slider
+
+&.media--business {
+	.mediaWall__title {
+		top: 6rem;
+	}
+	.column--left {
+		margin-top: 11.5rem;
+		.teaserPlain {
+			margin-right: 2.3rem;
+			&:nth-of-type(4) {
+				margin-right: 0;
+			}
+		}
+	}
+	.column--right {
+		padding-left: 1rem;
+		.teaserNarrow--middle {
+			margin-right: 2.3rem;
+		}
+	}
+
+} 

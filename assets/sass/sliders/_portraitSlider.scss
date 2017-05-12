@@ -1,0 +1,55 @@
+// //------------------------------
+// //--------- PORTRAIT SLIDER
+// //-----------------------------
+
+// HP Slider with yellow border
+
+.portraitSlider {
+	position: relative;
+	width: 66.4rem;
+	border: 2.3rem solid $c-yellow;
+	.slideBloc {
+		position: relative;
+	}
+	.teaser__imgWrapper {
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			bottom: 0;
+			background-color: rgba(0,0,0,0.6);
+			z-index: 0;
+		}
+	}
+	.teaser__introBox {
+		position: absolute;
+		top: 9.5rem;
+		left: 6.3rem;
+		width: 40%;
+		.teaser__tag {
+			margin-bottom: 2rem;
+			font-family: $styleFont--airways;
+			font-size: 3rem;
+			color: $c-yellow;
+		}
+		.teaser__title {
+			font-size: 2.8rem;
+			color: $c-white;
+		}
+		.teaser__text {
+			margin-bottom: 5rem;
+			color: $c-white;
+		}
+	}
+	.slider__navigation {
+		.slideInfo {
+			color: $c-white;
+		}
+		.fontelloIcon {
+			color: $c-white;
+		}
+	}
+}

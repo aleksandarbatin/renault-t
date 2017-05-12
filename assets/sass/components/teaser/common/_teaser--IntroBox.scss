@@ -5,20 +5,22 @@
 .teaser__introBox {
 	position: relative;
 	padding-top: 3.3rem;
-	// overflow: hidden;
-	.teaser {
-		&__title {
-			margin-bottom: 2.5rem;
-			font-family: $baseFont--Black;
-			font-size: 1.8rem;
-			line-height: 1.4;
-		}
-		&__text {
-			font-family: $baseFont;
-			font-size: 1.4rem;
-			line-height: 1.2;
-			color: $c-mediumGray; 
-			
-		}
+	min-height: 20rem;
+	text-align: left;
+}
+
+.teaser {
+	&__title {
+		margin-bottom: 2.5rem;
+		font-family: $baseFont--Black;
+		font-size: 1.8rem;
+		line-height: 1.4;
+	}
+	&__text {
+		font-family: $baseFont;
+		font-size: 1.4rem;
+		line-height: 1.3;
+		color: $c-mediumGray; 
+		
 	}
 }

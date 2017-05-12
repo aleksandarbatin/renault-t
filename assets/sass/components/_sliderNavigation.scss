@@ -1,0 +1,34 @@
+// //------------------------------
+// //--------- SLIDER NAVIGATION
+// //-----------------------------
+
+.slider__navigation {
+	position: absolute;
+	top: 6.5rem;
+	right: 5rem;
+	.fontelloIcon {
+		font-size: 1.8rem;
+		color: $c-darkGrey; 
+	}
+	.slider__arrows {
+		vertical-align: middle;
+		cursor: pointer;
+		&.btn-prev {
+			margin-right: 0.5rem;
+		}
+		&.btn-next {
+			margin-left: 0.5rem;
+		}
+	}
+ 		
+	.slideInfo {
+		font-family: $baseFont--Bold;
+		font-size: 1.4rem;
+		color: $c-darkGrey;
+		letter-spacing: 0.5rem;
+		display: inline-block;
+		&-current {
+			color: $c-yellow;
+		}
+	}
+}

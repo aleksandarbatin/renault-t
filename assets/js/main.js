@@ -21,6 +21,8 @@
       var $status = $('.slideInfo-current');
       var $total = $('.slideInfo-total');
       var $slickElement = $('.hpSlider');
+      var $slickElement = $('.faqSlider');
+      var $slickElement = $('.portraitSlider');
 
       $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
         //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
@@ -32,6 +34,24 @@
     $('.hpSlider').slick({
         prevArrow: $('.btn-prev'),
         nextArrow: $('.btn-next')
+    });
+
+    // #####################
+    // FAQ SLIDER
+
+    $('.faqSlider').slick({
+        prevArrow: $('.btn-prev'),
+        nextArrow: $('.btn-next'),
+        fade: true
+    });
+
+    // #####################
+    // PROFILE SLIDER
+
+    $('.portraitSlider__wrapper').slick({
+        prevArrow: $('.btn-prev'),
+        nextArrow: $('.btn-next'),
+        fade: true
     });
 
     
