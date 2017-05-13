@@ -10,7 +10,6 @@ To try how it works you need to have NODE.js and GULP installed on your machine 
 git clone https://github.com/aleksandarbatin/renault-t.git
 cd renault-t
 npm install
-
 ```
 All files used for building project are in /assets folder. You can see there that I'm using SASS for preprocesing CSS. Inside SASS folder see readme file for explanation of logic that I used for css naming convention and files structure.
 
