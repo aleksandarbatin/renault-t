@@ -9,63 +9,36 @@ To try how it works you need to have NODE.js and GULP instaled on your machine a
 ```
 git clone https://github.com/aleksandarbatin/renault-t.git
 cd renault-t
-npom install
+npm install
 
 ```
-
-All files used for building project are in folder /assets. Inside I use SASS for preprocesing CSS in SASS folder you can read readme file for explanation of logic that i used for structuring files and css clasification.
+All files used for building project are in /assets folder. You can see there that I'm using SASS for preprocesing CSS. Inside SASS folder see readme file for explanation of logic that i used for structuring files and css naming convention.
 
 ## Running the project
 
-Explain how to run the automated tests for this system
+As a part of GULP worklow there are some basic tasks like 
+
+#gulp-sass - for compiling Sass into CSS.
+
+#gulp-plumber - prevent pipe breaking caused by errors from gulp plugins
+
+#gulp-uglufy - minifies all .js files.
+
+#gulp-minify-css - minifies all CSS files.
+
+#gulp-imagemin - to optimize images using imageoptim and jpegmini
+
+#gulp-watch - watches for changes to file content and then executes gulp tasks when a change is detected. Watch is useful for tasks like continuous unit testing (every time you save a file, that new file is tested), refreshing your browser automatically when changes are reflected, or compiling preprocessing languages like Sass or Jade into CSS or HTML.
+
+#browser-sync - keep multiple browsers & devices in sync when building websites.
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
+To run and test project and work on it you just need command
 
 ```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
+gulp
 
 ```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+Enjoy it!
 
