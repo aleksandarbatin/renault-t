@@ -1,10 +1,10 @@
 # Renault - test
 
-This nice and straightforward design is perfect opportunity for practising your frontend tehnick and workflow.  Here I will represent mine.
+This nice and straightforward design is perfect opportunity for practicing your frontend technique and workflow. Here I will represent mine.
 
 ## Getting Started
 
-To try how it works you need to have NODE.js and GULP instaled on your machine and simply do 
+To try how it works you need to have NODE.js and GULP installed on your machine and simply do 
 
 ```
 git clone https://github.com/aleksandarbatin/renault-t.git
@@ -12,7 +12,7 @@ cd renault-t
 npm install
 
 ```
-All files used for building project are in /assets folder. You can see there that I'm using SASS for preprocesing CSS. Inside SASS folder see readme file for explanation of logic that i used for structuring files and css naming convention.
+All files used for building project are in /assets folder. You can see there that I'm using SASS for preprocesing CSS. Inside SASS folder see readme file for explanation of logic that I used for css naming convention and files structure.
 
 ## Running the project
 
@@ -32,9 +32,7 @@ As a part of GULP worklow there are some basic tasks like
 
 #browser-sync - keep multiple browsers & devices in sync when building websites.
 
-### Break down into end to end tests
-
-To run and test project and work on it you just need command
+To run and test project or work on it you just need command
 
 ```
 gulp
