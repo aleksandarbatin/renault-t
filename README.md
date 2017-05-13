@@ -15,7 +15,7 @@ All files used for building project are in /assets folder. You can see there tha
 
 ## Running the project
 
-As a part of GULP worklow there are some basic tasks like 
+As a part of GULP workflow there are some basic tasks like: 
 
 #gulp-sass - for compiling Sass into CSS.
 
