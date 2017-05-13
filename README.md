@@ -36,7 +36,6 @@ To run and test project or work on it you just need command
 
 ```
 gulp
-
 ```
 Enjoy it!
 
