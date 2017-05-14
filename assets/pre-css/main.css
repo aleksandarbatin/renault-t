@@ -553,15 +553,15 @@ h1 {
     height: auto;
     overflow: hidden;
     background-color: #f6f6f6; }
-  .mediaWall__title {
+  .mediaWall__title, .mostRead__title {
     position: absolute;
     top: 24rem;
     width: 20%;
     font-size: 3rem;
     text-transform: uppercase; }
-    .mediaWall__title .style {
+    .mediaWall__title .style, .mostRead__title .style {
       text-transform: initial; }
-    .mediaWall__title .strong {
+    .mediaWall__title .strong, .mostRead__title .strong {
       font-size: 3.2rem; }
   .mediaWall.media--steps .teaserNarrow {
     margin-top: 22.6rem;
@@ -580,10 +580,10 @@ h1 {
     margin-right: 2.3rem; }
     .mediaWall.media--wide .teaserPlain:nth-of-type(1) {
       margin-right: 8rem; }
-  .mediaWall.media--wide .mediaWall__title {
+  .mediaWall.media--wide .mediaWall__title, .mediaWall.media--wide .mostRead__title {
     top: 5rem;
     width: auto; }
-  .mediaWall.media--floatRight .mediaWall__title {
+  .mediaWall.media--floatRight .mediaWall__title, .mediaWall.media--floatRight .mostRead__title {
     top: 17rem;
     left: 8rem; }
   .mediaWall.media--floatRight .column--left {
@@ -594,14 +594,14 @@ h1 {
     padding-left: 9rem; }
   .mediaWall.media--floatRight .teaserNarrow--middle {
     margin-right: 2.3rem; }
-  .mediaWall.media--faq .mediaWall__title {
+  .mediaWall.media--faq .mediaWall__title, .mediaWall.media--faq .mostRead__title {
     top: -2rem; }
   .mediaWall.media--faq .whiteSmoke-bg {
     position: relative;
     height: 39.5rem;
     margin-right: 8rem;
     overflow: visible; }
-  .mediaWall.media--business .mediaWall__title {
+  .mediaWall.media--business .mediaWall__title, .mediaWall.media--business .mostRead__title {
     top: 6rem; }
   .mediaWall.media--business .column--left {
     margin-top: 11.5rem; }
@@ -613,6 +613,9 @@ h1 {
     padding-left: 1rem; }
     .mediaWall.media--business .column--right .teaserNarrow--middle {
       margin-right: 2.3rem; }
+
+.mostRead {
+  position: relative; }
 
 .strong {
   font-family: "Lato-Black"; }
@@ -658,7 +661,7 @@ h1 {
   color: #404040;
   letter-spacing: 0.5rem;
   display: inline-block; }
-  .slideInfo-current, .faqSlider__navigation .faqSlideInfo-current {
+  .slideInfo-current, .faqSlider__navigation .faqSlideInfo-current, .portraitSlider .portraitSlider__navigation .portraitSlideInfo-current {
     color: #ffcc33; }
 
 .btn-prev, .faqSlider__navigation .faq-prev, .portraitSlider .portraitSlider__navigation .portrait-prev {
@@ -750,14 +753,16 @@ h1 {
       line-height: 1.2; }
 
 .testTeaser {
+  position: relative;
   width: 100%;
-  height: auto;
+  height: 44.1rem;
+  margin-bottom: 20rem;
   padding-top: 9.7rem;
-  overflow: hidden;
   background-image: url("/images/testBg.png");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  clear: both; }
   .testTeaser .test__introBox {
-    width: 30%;
+    width: 20%;
     margin: 0 auto; }
   .testTeaser .test__title {
     margin-bottom: 2.5rem;
@@ -771,8 +776,32 @@ h1 {
     margin-bottom: 3rem;
     color: #000; }
   .testTeaser .test__promo {
-    float: left;
-    width: 33.33%; }
+    position: absolute;
+    bottom: -11rem;
+    width: 33.33%;
+    text-align: center; }
+    .testTeaser .test__promo img {
+      display: inline-block; }
+    .testTeaser .test__promo:nth-of-type(2) {
+      left: 2%; }
+      .testTeaser .test__promo:nth-of-type(2) img {
+        width: 30.7rem; }
+    .testTeaser .test__promo:nth-of-type(3) {
+      left: 32%; }
+      .testTeaser .test__promo:nth-of-type(3) img {
+        width: 35.1rem; }
+    .testTeaser .test__promo:nth-of-type(4) {
+      left: 65%; }
+      .testTeaser .test__promo:nth-of-type(4) img {
+        width: 36.2rem; }
+    .testTeaser .test__promo .promo__title {
+      margin-bottom: 1rem;
+      font-family: "Lato-Black";
+      font-size: 2.2rem;
+      text-transform: uppercase; }
+    .testTeaser .test__promo span {
+      font-family: "Lato-Regular", Arial, Helvetica, Tahoma, sans-serif;
+      font-size: 1.4rem; }
 
 .slick-slider {
   position: relative;
@@ -892,7 +921,13 @@ h1 {
         .hpViewer__arrows.btn-next, .faqSlider__navigation .hpViewer__arrows.faq-next, .portraitSlider .portraitSlider__navigation .hpViewer__arrows.portrait-next {
           right: 2rem; } }
     .hpViewer__arrows:hover {
-      background-color: #fff; }
+      background-color: #fff;
+      -webkit-transition: all 0.3s ease-in-out;
+      -khtml-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
   .hpViewer .slideInfo, .hpViewer .faqSlider__navigation .faqSlider__slideInfo, .faqSlider__navigation .hpViewer .faqSlider__slideInfo, .hpViewer .portraitSlider .portraitSlider__navigation .portraitSlider__slideInfo, .portraitSlider .portraitSlider__navigation .hpViewer .portraitSlider__slideInfo {
     position: absolute;
     left: 15.5%;

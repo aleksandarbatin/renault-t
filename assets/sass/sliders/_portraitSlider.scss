@@ -53,6 +53,9 @@
 		.portraitSlider__arrows {
 			@extend .slider__arrows;
 		}
+		.portraitSlideInfo-current {
+			@extend .slideInfo-current;
+		}
 		.fontelloIcon {
 			font-size: 1.8rem;
 			color: $c-white;

@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<script async="" src="/browser-sync/browser-sync-client.js?v=2.18.8"></script>
 	<div class="siteWrapper">
 	<!--HEADER-->
 		<header class="header">
@@ -434,7 +435,7 @@
 						</div>
 						<div class="portraitSlider__navigation">
 							<span class="portraitSlider__arrows portrait-prev"><i class="fontelloIcon left-dir">&#xe802;</i></span>
-							<div class="portraitSlider__slideInfo"><span class="portraitSlideInfo-current"></span><span class="portraitSlideInfo-total"></span></div>
+							<div class="portraitSlider__slideInfo"><span class="slideInfo-current"></span><span class="slideInfo-total"></span></div>
 							<span class="portraitSlider__arrows portrait-next"><i class="fontelloIcon right-dir">&#xe803;</i></span>
 						</div>
 					</article>
@@ -448,7 +449,7 @@
 			<div class="container">
 				<div class="test__introBox">
 					<h2 class="test__title"><span class="strong">Quel vehicule <br></span><span class="style">est falt </span>pour vous?</h2>
-					<p class="test__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolor velit dolores vel, quod quos consequatur assumenda odit, maiores, perspiciatis omnis minima pariatur suscipit voluptatum molestias illum.</p>
+					<p class="test__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolor velit dolores vel, quod quos consequatur assumenda officia eaque odit, maiores, perspiciatis nesciunt omnis minima pariatur suscipit voluptatum molestias illum.</p>
 					<a href="#" class="btn">Commencer le test</a>
 				</div>
 				<div class="test__promo">
@@ -474,38 +475,14 @@
 			<div class="container">
 				<h2 class="mostRead__title"><span class="style">Les</span>plus <span class="strong">Lus</span></h2>
 				<div class="mostRead__slider">
-					<div class="slideBloc">
-						<img src="images/mostread/mostread1.jpeg" alt="">
-						<h3 class="mostRead__slideBlock__title">Lorem ipsum dolor sit amet</h3>
-					</div>
-					<div class="slideBloc">
-						<img src="images/mostread/mostread2.jpeg" alt="">
-						<h3 class="mostRead__slideBlock__title">Lorem ipsum dolor sit amet</h3>
-					</div>
-					<div class="slideBloc">
-						<img src="images/mostread/mostread3.jpeg" alt="">
-						<h3 class="mostRead__slideBlock__title">Lorem ipsum dolor sit amet</h3>
-					</div>
-					<div class="slideBloc">
-						<img src="images/mostread/mostread4.jpeg" alt="">
-						<h3 class="mostRead__slideBlock__title">Lorem ipsum dolor sit amet</h3>
-					</div>
-					<div class="slideBloc">
-						<img src="images/mostread/mostread5.jpeg" alt="">
-						<h3 class="mostRead__slideBlock__title">Lorem ipsum dolor sit amet</h3>
-					</div>
-					<div class="slideBloc">
-						<img src="images/mostread/mostread6.jpeg" alt="">
-						<h3 class="mostRead__slideBlock__title">Lorem ipsum dolor sit amet</h3>
-					</div>
-					<div class="slideBloc">
-						<img src="images/mostread/mostread7.jpeg" alt="">
-						<h3 class="mostRead__slideBlock__title">Lorem ipsum dolor sit amet</h3>
-					</div>
-					<div class="slideBloc">
-						<img src="images/mostread/mostread3.jpeg" alt="">
-						<h3 class="mostRead__slideBlock__title">Lorem ipsum dolor sit amet</h3>
-					</div>
+					<div class="slideBloc"><img src="images/mostread/mostread1.jpeg" alt=""></div>
+					<div class="slideBloc"><img src="images/mostread/mostread2.jpeg" alt=""></div>
+					<div class="slideBloc"><img src="images/mostread/mostread3.jpeg" alt=""></div>
+					<div class="slideBloc"><img src="images/mostread/mostread4.jpeg" alt=""></div>
+					<div class="slideBloc"><img src="images/mostread/mostread5.jpeg" alt=""></div>
+					<div class="slideBloc"><img src="images/mostread/mostread6.jpeg" alt=""></div>
+					<div class="slideBloc"><img src="images/mostread/mostread7.jpeg" alt=""></div>
+					<div class="slideBloc"><img src="images/mostread/mostread1.jpeg" alt=""></div>
 				</div>
 			</div>
 		</section>

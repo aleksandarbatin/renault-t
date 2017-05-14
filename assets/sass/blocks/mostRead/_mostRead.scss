@@ -1,0 +1,11 @@
+//------------------------------
+//---------------- MOST READ
+//------------------------------
+
+.mostRead {
+	position: relative;
+	&__title {
+		@extend .mediaWall__title;
+	}
+	
+}

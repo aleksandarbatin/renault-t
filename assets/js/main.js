@@ -57,8 +57,9 @@
 
     // #####################
     // PROFILE SLIDER
-      var $pSliderstatus = $('.faqSlideInfo-current');
-      var $pSlidertotal = $('.faqSlideInfo-total');
+
+      var $pSliderstatus = $('.portraitSlideInfo-current');
+      var $pSlidertotal = $('.portraitSlideInfo-total');
       var $portraitSlider = $('.portraitSlider');
 
       $portraitSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
@@ -68,11 +69,20 @@
         $pSlidertotal.text('/' + slick.slideCount);
     });
 
-    $('.portraitSlider__wrapper').slick({
-        prevArrow: $('.portrait-prev'),
-        nextArrow: $('.portrait-next'),
-        fade: true
-    });
+    // #####################
+    // MOST READ SLIDER
+
+      $('.portraitSlider__wrapper').slick({
+          prevArrow: $('.portrait-prev'),
+          nextArrow: $('.portrait-next'),
+          fade: true
+      });
+
+      $('.mostRead__slider').slick({
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      });
 
     
 
