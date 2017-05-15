@@ -4,4 +4,7 @@
 
 .teaserNarrow--big {
 	width: 40.5rem;
+	@include breakpoint(tablet) {
+		width: 19.4rem;
+	}
 }

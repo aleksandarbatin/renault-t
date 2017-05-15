@@ -5,4 +5,15 @@
 .column {
 	float: left;
 	width: 50%;
+	&--right {
+		@include breakpoint(tablet) {
+			width: 44%;
+		}
+	}
+	&--left {
+		@include breakpoint(tablet) {
+			width: 56%;
+		}
+
+	}
 }

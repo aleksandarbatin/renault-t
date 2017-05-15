@@ -5,6 +5,8 @@
 //Third HP media block with teasers lean on right side
 
 &.media--floatRight {
+	margin-bottom: 6rem;
+    @extend .wrapUp;
 	.mediaWall__title {
 		top: 17rem;
 		left: 8rem;

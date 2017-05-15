@@ -4,7 +4,6 @@
 
 .mediaWall {
 	position: relative;
-	padding-top: 7.6rem;
 	clear: both;
 	text-align: center;
 
@@ -13,6 +12,9 @@
 	}
 	.column--left {
 		margin-top: 16.5rem;
+		@include breakpoint(tablet) {
+			margin-top: 8.7rem;
+		}
 	}
 
 	article {
@@ -31,12 +33,20 @@
 		top: 24rem;
 		width: 20%;
 		font-size: 3rem;
+		text-align: left;
 		text-transform: uppercase;
+		@include breakpoint(tablet) {
+			top: 9rem;
+			font-size: 2rem;
+		} 
 		.style {
 			text-transform: initial;
 		}
 		.strong {
 			font-size: 3.2rem;
+			@include breakpoint(tablet) {
+				font-size: 2rem;
+			} 
 		}
 	}
 

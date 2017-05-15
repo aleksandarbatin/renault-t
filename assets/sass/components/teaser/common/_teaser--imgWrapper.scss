@@ -16,5 +16,11 @@
 		font-family: $baseFont--Bold;
 		font-size: 1.2rem;
 		background-color: $c-yellow;
+		text-transform: uppercase;
+		@include breakpoint(tablet) {
+			padding: 1rem;
+			font-size: 0.8rem;
+
+		}
 	}
 }

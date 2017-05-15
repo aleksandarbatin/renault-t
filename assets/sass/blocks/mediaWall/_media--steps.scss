@@ -5,9 +5,18 @@
  //first HP media block 
  
 &.media--steps { 
+	padding-top: 7.6rem;
+	margin-bottom: 15rem;
+	@include breakpoint(tablet) {
+		padding-top: 3rem;
+	}
 	.teaserNarrow {
 		margin-top: 22.6rem;
 		margin-right: 2.3rem; 
+		@include breakpoint(tablet) {
+			margin-top: 5.6rem;
+			margin-right: 1.2rem;
+		}
 	}
 	.teaserWide {
 		margin-left: 0.6rem;

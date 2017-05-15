@@ -1,0 +1,59 @@
+//------------------------------
+//---------------- MOST READ SLIDER
+//------------------------------
+
+.mostRead {
+	position: relative;
+	height: 31.5rem;
+	background-color: $c-whiteSmoke;
+	
+	.container {
+		position: relative;
+		height: 31.5rem;
+		@extend .mainContent;
+	}
+	&__title {
+		top: 5rem;
+		@extend .mediaWall__title;
+		.style {
+			text-transform: initial;
+		}
+	}
+	&__slider {
+		width: 100.1rem;
+		float: right;
+		margin-top: -6rem;
+		margin-right: 6rem;
+		&__arrows {
+			position: absolute;
+			top: 31%;
+			@extend .hpViewer__arrows;
+			border: 0.2rem solid $c-easyGrey;
+			background-color: transparent!important;			
+			.fontelloIcon {
+				color: $c-softGrey;
+			}
+			&.mostread-next {
+				right: 0;
+			}
+			&.mostread-prev {
+				left: 20rem;
+			}
+		}
+	}
+
+	.slideBloc {
+		width: 23.4rem;
+		margin-right: 2.5rem;
+		img {
+			margin-bottom: 2.5rem;
+		}
+		
+	}
+
+	&__slideBlock__title {
+		font-family: $baseFont--Bold;
+		font-size: 1.6rem;
+	}
+}
+

@@ -82,6 +82,8 @@
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 4,
+        prevArrow: $('.mostread-prev'),
+          nextArrow: $('.mostread-next')
       });
 
     
