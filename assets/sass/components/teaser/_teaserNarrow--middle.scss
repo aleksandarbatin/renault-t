@@ -4,4 +4,7 @@
 
 .teaserNarrow--middle {
 	width: 32rem;
+	@include breakpoint(tablet) {
+		width: 19.4rem;
+	}
 }

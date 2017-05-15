@@ -21,6 +21,9 @@
 	.teaserWide {
 		margin-left: 0.6rem;
 		margin-bottom: 3rem;
+		@include breakpoint(tablet) {
+			margin-bottom: 0rem;
+		}
 	}
 	.teaserRight {
 		margin-left: 0.6rem;

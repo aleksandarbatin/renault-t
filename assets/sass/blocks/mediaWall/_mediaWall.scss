@@ -20,6 +20,9 @@
 	article {
 		float: left;
 		margin-bottom: 7.7rem;
+		@include breakpoint(tablet) {
+			margin-bottom: 2rem;
+		}
 	}
 
 	.whiteSmoke-bg {

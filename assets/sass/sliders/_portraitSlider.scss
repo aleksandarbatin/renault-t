@@ -10,6 +10,11 @@
 	margin-top: 11.5rem;
 	margin-bottom: 0!important;
 	border: 2.3rem solid $c-yellow;
+	@include breakpoint(tablet) {
+		width: 31.8rem;
+		margin-top: 6rem;
+		border: 1.2rem solid $c-yellow;
+	}
 	.slideBloc {
 		position: relative;
 	}
@@ -31,19 +36,35 @@
 		top: 9.5rem;
 		left: 6.3rem;
 		width: 40%;
+		@include breakpoint(tablet) {
+			top: 3rem;
+			left: 3rem;
+		}
 		.teaser__tag {
 			margin-bottom: 2rem;
 			font-family: $styleFont--airways;
 			font-size: 3rem;
 			color: $c-yellow;
+			@include breakpoint(tablet) {
+				font-size: 1.8rem;
+			}
 		}
 		.teaser__title {
 			font-size: 2.8rem;
 			color: $c-white;
+			@include breakpoint(tablet) {
+				margin-bottom: 5rem;
+				font-size: 1.6rem;
+			}
 		}
 		.teaser__text {
 			margin-bottom: 5rem;
 			color: $c-white;
+		}
+		.btn {
+			@include breakpoint(tablet) {
+				padding: 1rem 1.3rem;
+			}
 		}
 	}
 	.portraitSlider__navigation {

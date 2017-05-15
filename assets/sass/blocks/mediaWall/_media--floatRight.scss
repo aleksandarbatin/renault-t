@@ -8,19 +8,33 @@
 	margin-bottom: 6rem;
     @extend .wrapUp;
 	.mediaWall__title {
-		top: 17rem;
+		top: 9rem;
 		left: 8rem;
+		@include breakpoint(tablet) {
+			top: 3rem;
+			left: 6rem;
+		}
 	}
 	.column--left {
 		position: relative;
 		left: 8rem;
 		margin-top: 21rem;
+		@include breakpoint(tablet) {
+			left: 0;
+			margin-top: 10rem;
+		}
 	}
 	.column--right {
 		padding-left: 9rem;
+		@include breakpoint(tablet) {
+			padding-left: 1rem;
+		}
 	}
 
 	.teaserNarrow--middle {
 		margin-right: 2.3rem;
+		@include breakpoint(tablet) {
+			margin-right: 1.2rem;
+		}
 	}
 }

@@ -20,6 +20,7 @@
 		font-size: 1.8rem;
 		line-height: 1.4;
 		@include breakpoint(tablet) {
+			margin-bottom: 0;
 			font-size: 1.4rem;
 		}
 	}
