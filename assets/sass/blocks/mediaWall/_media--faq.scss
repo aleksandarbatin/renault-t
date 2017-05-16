@@ -6,6 +6,9 @@
 
  &.media--faq {
 	margin-bottom: 15rem;
+	@include breakpoint(tablet) {
+		margin-bottom: 11rem;
+	}
  	.mediaWall__title {
  		top: -9rem;
  		@include breakpoint(tablet) {

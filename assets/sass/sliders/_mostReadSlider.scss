@@ -6,15 +6,25 @@
 	position: relative;
 	height: 31.5rem;
 	background-color: $c-whiteSmoke;
+	@include breakpoint(tablet) {
+		height: 18.5rem;
+	}
 	
 	.container {
 		position: relative;
 		height: 31.5rem;
 		@extend .mainContent;
+		@include breakpoint(tablet) {
+			width: 65rem;
+			margin: 0 auto;
+		}
 	}
 	&__title {
 		top: 5rem;
 		@extend .mediaWall__title;
+		@include breakpoint(tablet) {
+			top: 3rem;
+		}
 		.style {
 			text-transform: initial;
 		}
@@ -24,20 +34,34 @@
 		float: right;
 		margin-top: -6rem;
 		margin-right: 6rem;
+		@include breakpoint(tablet) {
+			width: 50rem;
+			margin-top: -3rem;
+			margin-right: 2rem;
+		}
 		&__arrows {
 			position: absolute;
 			top: 31%;
 			@extend .hpViewer__arrows;
 			border: 0.2rem solid $c-easyGrey;
-			background-color: transparent!important;			
+			background-color: transparent!important;
+			@include breakpoint(tablet) {
+				top: 5rem;
+			}			
 			.fontelloIcon {
 				color: $c-softGrey;
 			}
 			&.mostread-next {
 				right: 0;
+				@include breakpoint(tablet) {
+					right: -0.5rem;
+				}
 			}
 			&.mostread-prev {
 				left: 20rem;
+				@include breakpoint(tablet) {
+					left: 9rem;
+				}
 			}
 		}
 	}
@@ -45,8 +69,15 @@
 	.slideBloc {
 		width: 23.4rem;
 		margin-right: 2.5rem;
+		@include breakpoint(tablet) {
+			width: 11.5rem;
+			margin-right: 1.2rem;
+		}
 		img {
 			margin-bottom: 2.5rem;
+			@include breakpoint(tablet) {
+				margin-bottom: 1rem;
+			}
 		}
 		
 	}
@@ -54,6 +85,9 @@
 	&__slideBlock__title {
 		font-family: $baseFont--Bold;
 		font-size: 1.6rem;
+		@include breakpoint(tablet) {
+			font-size: 1.2rem;
+		}
 	}
 }
 

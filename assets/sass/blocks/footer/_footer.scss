@@ -6,6 +6,9 @@
 	text-align: center;
 	clear: both;
 	padding: 8rem 0 7rem 0;
+	@include breakpoint(tablet) {
+		padding: 5rem 0 4rem 0;
+	}
 
 	&__logo {
 		display: inline-block;

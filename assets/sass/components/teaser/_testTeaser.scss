@@ -11,18 +11,41 @@
 	background-image:url("/images/testBg.png");
 	background-repeat: no-repeat;
 	clear: both;
-
+	@include breakpoint(tablet) {
+		width: 65rem;
+		height: 21.1rem;
+		margin: 0 auto;
+		margin-bottom: 24rem;
+		padding-top: 3.7rem;
+		text-align: center;
+	}
 	.test {
 		&__introBox {
 			width: 20%;
 			margin: 0 auto;
+			@include breakpoint(tablet) {
+				width: 40%;
+				padding-left: 3.5rem;
+			}
+			.btn {
+				padding: 1rem;
+				margin-right: 4rem;
+			}
 		}
 		&__title {
 			margin-bottom: 2.5rem;
 			font-size: 3rem;
 			text-transform: uppercase;
+			text-align: left;
+			@include breakpoint(tablet) {
+				margin-bottom: 3.5rem;
+				font-size: 2rem;
+			}
 			.strong{
 				font-size: 3.2rem;
+				@include breakpoint(tablet) {
+					font-size: 2.2rem
+				}
 			}
 			.style {
 				text-transform: initial;
@@ -38,13 +61,22 @@
 			bottom: -12rem;
 			width: 33.33%;
 			text-align: center;
+			@include breakpoint(tablet) {
+				bottom: -8rem;
+			}
 			img {
 				display: inline-block;
 			}
 			&:nth-of-type(2) {
 				left: 2%;
+				@include breakpoint(tablet) {
+					left: 0;
+				}
 				img {
 					width: 30.7rem;
+					@include breakpoint(tablet) {
+						width: 14.7rem;
+					}
 				}
 
 			}
@@ -52,13 +84,22 @@
 				left: 32%;
 				img {
 					width: 35.1rem;
+					@include breakpoint(tablet) {
+						width: 17.1rem;
+					}
 				}
 
 			}
 			&:nth-of-type(4) {
 				left: 65%;
+				@include breakpoint(tablet) {
+					left: 66%;
+				}
 				img {
 					width: 36.2rem;
+					@include breakpoint(tablet) {
+						width: 17rem;
+					}
 				}
 
 			}
@@ -66,11 +107,18 @@
 				margin-bottom: 1rem;
 				font-family: $baseFont--Black;
 				font-size: 2.2rem;
+				letter-spacing: 0.1rem;
 				text-transform: uppercase;
+				@include breakpoint(tablet) {
+					font-size: 1.4rem;
+				}
 			}
 			span {
 				font-family: $baseFont;
 				font-size: 1.4rem;	
+				@include breakpoint(tablet) {
+					display: none;
+				}
 			}
 		}
 	}

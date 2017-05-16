@@ -7,6 +7,9 @@
 &.media--business {
 	padding-top: 0;
 	margin-bottom: 13rem;
+	@include breakpoint(tablet) {
+		margin-bottom: 6rem;
+	}
 	@extend .wrapUp;
 	.mediaWall__title {
 		top: 0rem;
