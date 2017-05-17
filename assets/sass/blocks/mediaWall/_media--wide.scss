@@ -6,6 +6,11 @@
 
  &.media--wide {
  	padding-top: 0;
+ 	.container {
+ 		@include breakpoint(mobile) {
+ 			width: 100%;
+ 		}
+ 	}
  	.whiteSmoke-bg {
  		padding: 10rem 0 13.8rem;
     	overflow: hidden;
@@ -22,12 +27,26 @@
 			margin-top: -6rem;
 			margin-right: 1.2rem;
 		}
+		@include breakpoint(mobile) {
+			float: left;
+			margin-top: 5rem;
+			margin-left: 3.5rem;
+		}
 		&:nth-of-type(1) {
 			margin-right: 8rem;
 			@include breakpoint(tablet) {
 				margin-right: 4rem;
 			}
+			@include breakpoint(mobile) {
+				margin-right: 1rem;
+			}
 		}
+		&:nth-of-type(2) {
+			@include breakpoint(mobile) {
+				margin-right: 0;
+				margin-left: 0;
+			}
+		} 
 	}
 
  	.mediaWall__title {
@@ -35,6 +54,9 @@
     	width: auto;
     	@include breakpoint(tablet) {
     		top: 3rem;
+    	}
+    	@include breakpoint(mobile) {
+    		top: 3.5rem;
     	}
  	}
  } 

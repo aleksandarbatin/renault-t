@@ -17,12 +17,19 @@
 			margin-top: 5.6rem;
 			margin-right: 1.2rem;
 		}
+		@include breakpoint(mobile) {
+			margin-top: 18.5rem;
+		}
 	}
 	.teaserWide {
 		margin-left: 0.6rem;
 		margin-bottom: 3rem;
 		@include breakpoint(tablet) {
 			margin-bottom: 2.3rem;
+		}
+		@include breakpoint(mobile) {
+			margin-left: 0;
+			margin-bottom: 7rem;
 		}
 	}
 	.teaserRight {

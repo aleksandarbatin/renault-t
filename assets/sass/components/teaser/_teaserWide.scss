@@ -7,4 +7,7 @@
 	@include breakpoint(tablet) {
 		width: 27.6rem;
 	}
+	@include breakpoint(mobile) {
+		width: 56rem;
+	}
 }

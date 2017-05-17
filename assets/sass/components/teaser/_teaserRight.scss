@@ -11,6 +11,9 @@
 			width: 15.4rem;
 			margin-right: 1.2rem;
 		}
+		@include breakpoint(mobile) {
+			width: 27.2rem;
+		}
 	}
 	.teaser__introBox {
 		padding-top: 0;

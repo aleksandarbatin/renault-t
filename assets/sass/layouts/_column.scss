@@ -5,14 +5,29 @@
 .column {
 	float: left;
 	width: 50%;
+	@include breakpoint(mobile) {
+		float: none;
+		height: auto;
+		overflow: hidden;
+	}
 	&--right {
 		@include breakpoint(tablet) {
 			width: 44%;
+		}
+		@include breakpoint(mobile) {
+			width: 100%;
+			margin-bottom: 2rem;
+
 		}
 	}
 	&--left {
 		@include breakpoint(tablet) {
 			width: 56%;
+		}
+		@include breakpoint(mobile) {
+			width: 100%;
+			margin-top: 1rem;
+			margin-bottom: 5.5rem;
 		}
 
 	}

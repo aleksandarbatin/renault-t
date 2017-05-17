@@ -22,5 +22,9 @@
 			font-size: 0.8rem;
 
 		}
+		@include breakpoint(mobile) {
+			font-size: 1.4rem;
+			padding: 1.2rem;
+		}
 	}
 }

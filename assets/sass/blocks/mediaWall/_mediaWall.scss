@@ -41,14 +41,24 @@
 		@include breakpoint(tablet) {
 			top: 9rem;
 			font-size: 2rem;
+		}
+		@include breakpoint(mobile) {
+			top: 6.5rem;
+			font-size: 4rem;
 		} 
 		.style {
 			text-transform: initial;
+			@include breakpoint(mobile) {
+				font-size: 5rem;
+			}
 		}
 		.strong {
 			font-size: 3.2rem;
 			@include breakpoint(tablet) {
 				font-size: 2rem;
+			}
+			@include breakpoint(mobile) {
+				font-size: 4.5rem;
 			} 
 		}
 	}
