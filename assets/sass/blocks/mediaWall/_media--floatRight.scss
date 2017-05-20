@@ -11,12 +11,20 @@
     	padding-top: 6rem;
     	margin-bottom: 11.5rem;	
     }
+    @include breakpoint(mobile) {
+    	padding-top: 11rem;	
+    	margin-bottom: 8.5rem;
+    }
 	.mediaWall__title {
 		top: 9rem;
 		left: 8rem;
 		@include breakpoint(tablet) {
 			top: 8.5rem;
     		left: 5rem;
+		}
+		@include breakpoint(mobile) {
+			top: 7.5rem;
+			left: 3.5rem;
 		}
 	}
 	.column--left {
@@ -27,11 +35,17 @@
 			left: 0;
 			margin-top: 10rem;
 		}
+		@include breakpoint(mobile) {
+			margin-bottom: 0;
+		}
 	}
 	.column--right {
 		padding-left: 9rem;
 		@include breakpoint(tablet) {
 			padding-left: 1rem;
+		}
+		@include breakpoint(mobile) {
+			padding-left: 0;
 		}
 	}
 
@@ -49,6 +63,12 @@
 	.teaserWide {
 		@include breakpoint(tablet) {
 			margin-bottom: 6rem;
+		}
+		@include breakpoint(mobile) {
+			margin-bottom: 7rem;
+		}
+		.teaser__introBox {
+			min-height: auto;
 		}
 	}
 }

@@ -24,11 +24,20 @@
 	&-current {
 		color: $c-yellow;
 	}
+	@include breakpoint(mobile) {
+		font-size: 2.5rem;
+	}
 }
 
 .btn-prev {
 	margin-right: 0.5rem;
+	@include breakpoint(mobile) {
+		margin-right: 1.5rem;
+	}	
 }
 .btn-next {
 	margin-left: 0.5rem;
+	@include breakpoint(mobile) {
+		margin-left: 1.5rem;
+	}	
 }

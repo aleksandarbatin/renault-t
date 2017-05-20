@@ -19,6 +19,12 @@
 		padding-top: 3.7rem;
 		text-align: center;
 	}
+	@include breakpoint(mobile) {
+		height: auto;
+		padding-top: 7rem;
+		padding-bottom: 6rem;
+		background-size: cover;
+	}
 	.test {
 		&__introBox {
 			width: 20%;
@@ -27,9 +33,16 @@
 				width: 40%;
 				padding-left: 3.5rem;
 			}
+			@include breakpoint(mobile) {
+				width: 80%;
+			}
 			.btn {
 				padding: 1rem;
 				margin-right: 4rem;
+				@include breakpoint(mobile) {
+					padding: 2.2rem 2.5rem;	
+					font-size: 1.8rem;
+				}
 			}
 		}
 		&__title {
@@ -41,10 +54,16 @@
 				margin-bottom: 3.5rem;
 				font-size: 2rem;
 			}
+			@include breakpoint(mobile) {
+				font-size: 4.2rem;
+			}
 			.strong{
 				font-size: 3.2rem;
 				@include breakpoint(tablet) {
 					font-size: 2.2rem
+				}
+				@include breakpoint(mobile) {
+					font-size: 4.5rem
 				}
 			}
 			.style {
@@ -55,6 +74,12 @@
 			margin-bottom: 3rem;
 			@extend .teaser__text;
 			color: $c-black;
+			@include breakpoint(mobile) {
+				display: block;
+				margin-bottom: 4rem;
+				font-size: 2.6rem;
+				text-align: left;
+			}
 		}
 		&__promo {
 			position: absolute;
@@ -63,6 +88,9 @@
 			text-align: center;
 			@include breakpoint(tablet) {
 				bottom: -8rem;
+			}
+			@include breakpoint(mobile) {
+				display: none;
 			}
 			img {
 				display: inline-block;

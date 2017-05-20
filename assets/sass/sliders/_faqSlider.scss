@@ -13,6 +13,12 @@
 		width: 75%;
 		margin-right: 4rem;
 	}
+	@include breakpoint(mobile) {
+		top: -14rem;
+		width: 56rem;
+		margin: 0 auto;
+		float: none;
+	}
 	.slideBloc {
 		height: auto;
 		.teaser__imgWrapper {
@@ -22,6 +28,10 @@
 			@include vendor-prefixes(box-shadow, 0px 42px 54px -20px rgba(64,64,64,0.7));
 			@include breakpoint(tablet) {
 				width: 27.6rem;
+			}
+			@include breakpoint(mobile) {
+				width: 100%;
+				float: none;
 			}
 			img {
 				width: 100%;
@@ -34,10 +44,16 @@
 				padding-top: 10rem;
 				padding-right: 0rem;
 			}
+			@include breakpoint(mobile) {
+				padding-top: 4rem;
+			}
 			.teaser__title {
 				font-size: 2.2rem;
 				@include breakpoint(tablet) {
 					font-size: 1.6rem;
+				}
+				@include breakpoint(mobile) {
+					font-size: 2.8rem;
 				}
 			}
 		}
@@ -52,10 +68,16 @@
 			top: auto;
 			bottom: 2.5rem;
 			right: 3rem;
+			@include breakpoint(mobile) {
+				bottom: 3.5rem;
+			}
 		}
 		.fontelloIcon {
 			font-size: 1.8rem;
 			color: $c-darkGrey; 
+			@include breakpoint(mobile) {
+				font-size: 2.8rem;
+			}
 		}
 		.faqSlider__arrows {
 			@extend .slider__arrows;
@@ -63,6 +85,7 @@
 	 		
 		.faqSlider__slideInfo {
 			@extend .slideInfo;
+			
 		}
 		.faqSlideInfo-current {
 			@extend .slideInfo-current;
@@ -71,7 +94,10 @@
 			@extend .btn-next;
 		}
 		.faq-prev {
-			@extend .btn-prev;	
+			@extend .btn-prev;
+			@include breakpoint(mobile) {
+				margin-right: 1.5rem;
+			}	
 		}
 	}
 }

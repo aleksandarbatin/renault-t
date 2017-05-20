@@ -15,6 +15,10 @@
 		margin-top: 6rem;
 		border: 1.2rem solid $c-yellow;
 	}
+	@include breakpoint(mobile) {
+		width: 100%;
+		border: 2.2rem solid $c-yellow;
+	}
 	.slideBloc {
 		position: relative;
 	}
@@ -40,6 +44,10 @@
 			top: 3rem;
 			left: 3rem;
 		}
+		@include breakpoint(mobile) {
+			top: 5.5rem;
+			left: 4.5rem;
+		}
 		.teaser__tag {
 			margin-bottom: 2rem;
 			font-family: $styleFont--airways;
@@ -47,6 +55,9 @@
 			color: $c-yellow;
 			@include breakpoint(tablet) {
 				font-size: 1.8rem;
+			}
+			@include breakpoint(mobile) {
+				font-size: 5rem;
 			}
 		}
 		.teaser__title {
@@ -56,6 +67,11 @@
 				margin-bottom: 5rem;
 				font-size: 1.6rem;
 			}
+			@include breakpoint(mobile) {
+				margin-top: 2rem;
+				margin-bottom: 5rem;
+				font-size: 3.6rem;
+			}
 		}
 		.teaser__text {
 			margin-bottom: 5rem;
@@ -64,6 +80,9 @@
 		.btn {
 			@include breakpoint(tablet) {
 				padding: 1rem 1.3rem;
+			}
+			@include breakpoint(mobile) {
+				font-size: 1.2rem;
 			}
 		}
 	}
@@ -82,6 +101,9 @@
 		.fontelloIcon {
 			font-size: 1.8rem;
 			color: $c-white;
+			@include breakpoint(mobile) {
+				font-size: 2.8rem;
+			}
 		}
 		.portrait-next {
 			@extend .btn-next;

@@ -43,6 +43,7 @@
 			font-size: 2rem;
 		}
 		@include breakpoint(mobile) {
+			width: 30%;
 			top: 6.5rem;
 			font-size: 4rem;
 		} 
