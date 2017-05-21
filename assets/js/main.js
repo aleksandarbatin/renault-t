@@ -45,8 +45,8 @@
        $faqSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
         //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
         var i = (currentSlide ? currentSlide : 0) + 1;
-        $faqSliderstatus.text(i);
-        $faqSlidertotal.text('/' + slick.slideCount);
+        $faqSliderstatus.text("0" + i);
+        $faqSlidertotal.text('/' + "0" + slick.slideCount);
     });
 
     $('.faqSlider').slick({
@@ -65,12 +65,9 @@
       $portraitSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
         //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
         var i = (currentSlide ? currentSlide : 0) + 1;
-        $pSliderstatus.text(i);
-        $pSlidertotal.text('/' + slick.slideCount);
-    });
-
-    // #####################
-    // MOST READ SLIDER
+        $pSliderstatus.text("0" + i);
+        $pSlidertotal.text('/' + "0" + slick.slideCount);
+      });
 
       $('.portraitSlider__wrapper').slick({
           prevArrow: $('.portrait-prev'),
@@ -78,14 +75,20 @@
           fade: true
       });
 
-      $('.mostRead__slider').slick({
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        prevArrow: $('.mostread-prev'),
-          nextArrow: $('.mostread-next')
-      });
+    // #####################
+    // MOST READ SLIDER
 
+     if($(window).width() > 767) {
+        $('.mostRead__slider').slick({
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          prevArrow: $('.mostread-prev'),
+          nextArrow: $('.mostread-next')
+        });
+      }
+
+     
     
 
 })();

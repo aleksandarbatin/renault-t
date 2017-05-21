@@ -583,16 +583,29 @@ h1 {
   @media (max-width: 1023px) {
     .footer {
       padding: 5rem 0 4rem 0; } }
+  @media (max-width: 767px) {
+    .footer {
+      padding: 8rem 0 7rem 0; } }
   .footer__logo {
     display: inline-block;
     width: 13.8rem; }
+    @media (max-width: 767px) {
+      .footer__logo {
+        width: 17.8rem; } }
   .footer__nav {
     font-family: "Lato-Bold";
     font-size: 1rem;
     color: #8b8b8b;
     text-transform: uppercase; }
+    @media (max-width: 767px) {
+      .footer__nav {
+        margin-top: 3rem;
+        font-size: 2rem; } }
     .footer__nav span {
       cursor: pointer; }
+      @media (max-width: 767px) {
+        .footer__nav span {
+          display: block; } }
       @media (min-width: 1024px) {
         .footer__nav span:hover {
           color: #000;
@@ -605,6 +618,10 @@ h1 {
           transition: all 0.3s ease-in-out; } }
     .footer__nav span:first-child {
       margin-right: 3rem; }
+      @media (max-width: 767px) {
+        .footer__nav span:first-child {
+          margin-right: 0;
+          margin-bottom: 3rem; } }
 
 .mediaWall {
   position: relative;
@@ -666,7 +683,7 @@ h1 {
       @media (max-width: 1023px) {
         .mediaWall.media--steps .teaserNarrow {
           margin-top: 5.6rem;
-          margin-right: 1.2rem; } }
+          margin-right: 1.5rem; } }
       @media (max-width: 767px) {
         .mediaWall.media--steps .teaserNarrow {
           margin-top: 12.5rem; } }
@@ -717,7 +734,7 @@ h1 {
             margin-right: 4rem; } }
         @media (max-width: 767px) {
           .mediaWall.media--wide .teaserPlain:nth-of-type(1) {
-            margin-right: 1rem; } }
+            margin-right: 1.5rem; } }
       @media (max-width: 767px) {
         .mediaWall.media--wide .teaserPlain:nth-of-type(2) {
           margin-right: 0;
@@ -775,7 +792,7 @@ h1 {
       margin-right: 2.3rem; }
       @media (max-width: 1023px) {
         .mediaWall.media--floatRight .teaserNarrow--middle {
-          margin-right: 1.2rem; } }
+          margin-right: 1.5rem; } }
     @media (max-width: 1023px) {
       .mediaWall.media--floatRight .teaserPlain {
         margin-bottom: 4rem; } }
@@ -845,7 +862,7 @@ h1 {
         margin-right: 2.3rem; }
         @media (max-width: 1023px) {
           .mediaWall.media--business .column--left .teaserPlain {
-            margin-right: 1.2rem; } }
+            margin-right: 1.5rem; } }
         .mediaWall.media--business .column--left .teaserPlain:nth-of-type(3) {
           margin-top: -17rem; }
           @media (max-width: 767px) {
@@ -875,7 +892,7 @@ h1 {
         @media (max-width: 1023px) {
           .mediaWall.media--business .column--right .teaserNarrow--middle {
             width: 15.2rem;
-            margin-right: 1.2rem; } }
+            margin-right: 1.5rem; } }
         @media (max-width: 767px) {
           .mediaWall.media--business .column--right .teaserNarrow--middle {
             width: 27.2rem; } }
@@ -928,8 +945,8 @@ h1 {
 .slideInfo, .faqSlider__navigation .faqSlider__slideInfo, .portraitSlider .portraitSlider__navigation .portraitSlider__slideInfo {
   font-family: "Lato-Bold";
   font-size: 1.4rem;
+  letter-spacing: 0.2rem;
   color: #404040;
-  letter-spacing: 0.5rem;
   display: inline-block; }
   .slideInfo-current, .faqSlider__navigation .faqSlideInfo-current, .portraitSlider .portraitSlider__navigation .portraitSlideInfo-current {
     color: #ffcc33; }
@@ -1136,8 +1153,9 @@ h1 {
   @media (max-width: 767px) {
     .testTeaser {
       height: auto;
+      margin-bottom: 10rem;
       padding-top: 7rem;
-      padding-bottom: 6rem;
+      padding-bottom: 7rem;
       background-size: cover; } }
   .testTeaser .test__introBox {
     width: 20%;
@@ -1184,7 +1202,7 @@ h1 {
     @media (max-width: 767px) {
       .testTeaser .test__text {
         display: block;
-        margin-bottom: 4rem;
+        margin-bottom: 7rem;
         font-size: 2.6rem;
         text-align: left; } }
   .testTeaser .test__promo {
@@ -1615,6 +1633,11 @@ h1 {
   @media (max-width: 1023px) {
     .mostRead {
       height: 18.5rem; } }
+  @media (max-width: 767px) {
+    .mostRead {
+      height: auto;
+      padding-top: 5rem;
+      overflow: hidden; } }
   .mostRead .container {
     position: relative;
     height: 31.5rem; }
@@ -1622,11 +1645,19 @@ h1 {
       .mostRead .container {
         width: 65rem;
         margin: 0 auto; } }
+    @media (max-width: 767px) {
+      .mostRead .container {
+        width: 56rem; } }
   .mostRead__title {
     top: 5rem; }
     @media (max-width: 1023px) {
       .mostRead__title {
         top: 3rem; } }
+    @media (max-width: 767px) {
+      .mostRead__title {
+        position: static;
+        width: 50%;
+        margin-bottom: 6rem; } }
     .mostRead__title .style {
       text-transform: initial; }
   .mostRead__slider {
@@ -1639,6 +1670,11 @@ h1 {
         width: 50rem;
         margin-top: -3rem;
         margin-right: 2rem; } }
+    @media (max-width: 767px) {
+      .mostRead__slider {
+        width: 100%;
+        float: none;
+        margin-top: 0; } }
     .mostRead__slider__arrows {
       position: absolute;
       top: 31%;
@@ -1666,14 +1702,29 @@ h1 {
       .mostRead .slideBloc {
         width: 11.5rem;
         margin-right: 1.2rem; } }
+    @media (max-width: 767px) {
+      .mostRead .slideBloc {
+        float: left;
+        width: 48.5%;
+        margin-right: 1.5rem;
+        margin-bottom: 5.5rem; } }
     .mostRead .slideBloc img {
       margin-bottom: 2.5rem; }
       @media (max-width: 1023px) {
         .mostRead .slideBloc img {
           margin-bottom: 1rem; } }
+      @media (max-width: 767px) {
+        .mostRead .slideBloc img {
+          width: 100%;
+          margin-bottom: 1.5rem; } }
+    .mostRead .slideBloc:nth-of-type(even) {
+      margin-right: 0; }
   .mostRead__slideBlock__title {
     font-family: "Lato-Bold";
     font-size: 1.6rem; }
     @media (max-width: 1023px) {
       .mostRead__slideBlock__title {
         font-size: 1.2rem; } }
+    @media (max-width: 767px) {
+      .mostRead__slideBlock__title {
+        font-size: 2.6rem; } }

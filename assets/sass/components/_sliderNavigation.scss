@@ -18,8 +18,8 @@
 .slideInfo {
 	font-family: $baseFont--Bold;
 	font-size: 1.4rem;
+	letter-spacing: 0.2rem;
 	color: $c-darkGrey;
-	letter-spacing: 0.5rem;
 	display: inline-block;
 	&-current {
 		color: $c-yellow;

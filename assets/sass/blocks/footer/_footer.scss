@@ -9,18 +9,31 @@
 	@include breakpoint(tablet) {
 		padding: 5rem 0 4rem 0;
 	}
+	@include breakpoint(mobile) {
+		padding: 8rem 0 7rem 0;
+	}
 
 	&__logo {
 		display: inline-block;
 		width: 13.8rem;
+		@include breakpoint(mobile) {
+			width: 17.8rem;
+		}
 	}
 	&__nav {
 		font-family: $baseFont--Bold;
 		font-size: 1rem;
 		color: $c-lightGrey;
 		text-transform: uppercase;
+		@include breakpoint(mobile) {
+			margin-top: 3rem;
+			font-size: 2rem;
+		}
 		span {
 			cursor: pointer;
+			@include breakpoint(mobile) {
+				display: block;
+			}
 			&:hover {
 				@include breakpoint(exeptGadgets) {
 					color: $c-black;
@@ -33,6 +46,10 @@
 		
 		span:first-child {
 			margin-right: 3rem;
+			@include breakpoint(mobile) {
+				margin-right: 0;
+				margin-bottom: 3rem;
+			}
 		} 
 	}
 }
