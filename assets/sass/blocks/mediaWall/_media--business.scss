@@ -30,6 +30,9 @@
 		.teaserPlain {
 			margin-right: 2.3rem;
 			@include breakpoint(tablet) {
+				margin-right: 1.2rem;
+			}
+			@include breakpoint(mobile) {
 				margin-right: 1.5rem;
 			}
 			&:nth-of-type(3) {
@@ -66,10 +69,11 @@
 			margin-right: 2.3rem;
 			@include breakpoint(tablet) {
 				width: 15.2rem;
-				margin-right: 1.5rem;
+				margin-right: 1.2rem;
 			}
 			@include breakpoint(mobile) {
 				width: 27.2rem;
+				margin-right: 1.5rem;
 			}
 		}
 	}

@@ -107,7 +107,10 @@
 			}
 		}
 		&:nth-of-type(even) {
-			margin-right: 0;
+			@include breakpoint(mobile) {
+				margin-right: 0;
+			}
+			
 		}
 		
 	}

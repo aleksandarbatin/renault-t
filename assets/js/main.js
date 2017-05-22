@@ -78,7 +78,7 @@
     // #####################
     // MOST READ SLIDER
 
-     if($(window).width() > 767) {
+      if($(window).width() > 767) {
         $('.mostRead__slider').slick({
           speed: 300,
           slidesToShow: 4,
@@ -88,7 +88,25 @@
         });
       }
 
-     
+    // #####################
+    // ARTICLE DIAPORAMA
+
+    $('.articleDiaporama__slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.diaporama__thumbnails'
+    });
+    $('.diaporama__thumbnails').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.articleDiaporama__slider',  
+      centerMode: true,
+      prevArrow: $('.diaporama-prev'),
+      nextArrow: $('.diaporama-next')
+    });
+
     
 
 })();

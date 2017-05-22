@@ -13,11 +13,16 @@
 				<li><i class="fontelloIcon icon-facebook">&#xf30c;</i></li>
 				<li><i class="fontelloIcon icon-youtube-play">&#xf16a;</i></li>
 			</ul>
+			<span class="header__btnMenu">
+				<img src="images/menuHam.png" class="openBtn" alt="hamBtn">
+				<img src="images/closeBtn.png" class="closeBtn" alt="closeBtn">
+			</span>
+			<!-- navigation -->
 			<ul class="header__navigation">
-				<li>My business
+				<li class="menu"><span><i class="fontelloIcon down-open">&#xe805;</i>My business</span>
 					
 				</li>
-				<li>My van
+				<li class="menu"><span><i class="fontelloIcon down-open">&#xe805;</i>My van</span>
 					<nav class="navigation__submenu">
 						<div class="submenu__column">
 							<ul class="submenu__row">
@@ -34,106 +39,97 @@
 						</div>
 						<div class="submenu__column--wide">
 							<div class="topArticles">
-								<h2>Top<span>articles</span></h2>
+								<h2>Top<span class="style">articles</span></h2>
 								<article class="topArticles__teaser">
-									<img src="" alt="">
+									<img src="images/toparticles/toparticles.jpeg" alt="">
 									<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
 								</article>
 								<article class="topArticles__teaser">
-									<img src="" alt="">
+									<img src="images/toparticles/toparticles2.jpeg" alt="">
 									<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
 								</article>
 								<article class="topArticles__teaser">
-									<img src="" alt="">
+									<img src="images/toparticles/toparticles3.jpeg" alt="">
 									<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
 								</article>
 								<article class="topArticles__teaser">
-									<img src="" alt="">
+									<img src="images/toparticles/toparticles4.jpeg" alt="">
 									<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
 								</article>
 							</div>
 						</div>
 					</nav>
 				</li>
-				<li>Faq
+				<li class="menu"><span><i class="fontelloIcon down-open">&#xe805;</i>Faq</span>
 					<ul class="navigation__submenu"></ul>
 				</li>
-				<li>We, the vans driver
+				<li class="menu"><span><i class="fontelloIcon down-open">&#xe805;</i>We, the vans driver</span>
 					<ul class="navigation__submenu"></ul>
 				</li>
-				<li>What's new
+				<li class="menu"><span><i class="fontelloIcon down-open">&#xe805;</i>What's new</span>
 					<ul class="navigation__submenu"></ul>
 				</li>
-				<li>Videos
+				<li class="menu"><span><i class="fontelloIcon down-open">&#xe805;</i>Videos</span>
 					<ul class="navigation__submenu"></ul>
+				</li>
+				<li class="social">
+					<ul class="header__social--devices">
+						<li><i class="fontelloIcon icon-facebook">&#xf30c;</i></li>
+						<li><i class="fontelloIcon icon-youtube-play">&#xf16a;</i></li>
+					</ul>
 				</li>
 			</ul>
+			<!-- navigation -->
 			<h1 class="header__logo"><img src="images/renaultLogo.png" alt="siteLogo"></h1>
-			<span class="header__search"><img src="images/searchIcon.png" alt="searchLope"></span>
+			<h1 class="header__logo--tablet"><img src="images/deviceLogo.png" alt="siteLogo"></h1>
+			<h1 class="header__logo--mobile"><img src="images/mobileLogo.png" alt="siteLogo"></h1>
+			<span class="header__search"><img src="images/loupeSearch.png" alt="searchLope"></span>
 		</header>
 		<div class="header-holder"></div>
+		<div class="header__navigation__curtain"></div>
 	<!-- / HEADER-->
 	<div class="articlePage">
 	<!-- Diaporama-->
 		<section class="articlePage__head">
 			<div class="articleDiaporama">
-				<div class="slideBloc">
-					<img src="images/diaporama/diaporama1.jpeg" alt="">
-					<div class="hpViewer__infoBox">
-						<span class="infoBox__date">lorem ipsum</span>
-						<span class="infoBox__tag">Communication</span>
-						<h2 class="infoBox__title">Maecenas velit nunc, ultricies fringilla</h2>
-						<h3 class="infoBox__subtitle">Etiam tincidunt diam et nisl</h3>
+				<div class="articleDiaporama__slider">
+					<div class="slideBloc">
+						<img src="images/diaporama/diaporama5.jpeg" alt="">
+					</div>
+					<div class="slideBloc">
+						<img src="images/diaporama/diaporama2.jpg" alt="">
+					</div>
+					<div class="slideBloc">
+						<img src="images/diaporama/diaporama4.jpeg" alt="">
+					</div>
+					<div class="slideBloc">
+						<img src="images/diaporama/diaporama1.jpeg" alt="">
+					</div>
+					<div class="slideBloc">
+						<img src="images/diaporama/diaporama6.jpg" alt="">
+					</div>
+					<div class="slideBloc">
+						<img src="images/diaporama/diapoarma7.jpeg" alt="">
 					</div>
 				</div>
-				<div class="slideBloc">
-					<img src="images/diaporama/diaporama2.jpeg" alt="">
-					<div class="hpViewer__infoBox">
-						<span class="infoBox__date">lorem ipsum</span>
-						<span class="infoBox__tag">Communication</span>
-						<h2 class="infoBox__title">Maecenas velit nunc, ultricies fringilla</h2>
-						<h3 class="infoBox__subtitle">Etiam tincidunt diam et nisl</h3>
+			
+				<div class="articleDiaporama__nav">
+					<span class="diaporama__arrows diaporama-prev"><i class="fontelloIcon left">&#xe800;</i></span>
+					<div class="diaporama__thumbnails">
+						<img class="thumbNail" src="images/diaporama/diaporama5.jpeg" alt="">
+						<img class="thumbNail" src="images/diaporama/diaporama2.jpg" alt="">
+						<img class="thumbNail" src="images/diaporama/diaporama4.jpeg" alt="">
+						<img class="thumbNail" src="images/diaporama/diaporama1.jpeg" alt="">
+						<img class="thumbNail" src="images/diaporama/diaporama6.jpg" alt="">
+						<img class="thumbNail" src="images/diaporama/diapoarma7.jpeg" alt="">
 					</div>
+					<span class="diaporama__arrows diaporama-next"><i class="fontelloIcon right">&#xe801;</i></span>
 				</div>
-				<div class="slideBloc">
-					<img src="images/diaporama/diaporama4.jpeg" alt="">
-					<div class="hpViewer__infoBox">
-						<span class="infoBox__date">lorem ipsum</span>
-						<span class="infoBox__tag">Communication</span>
-						<h2 class="infoBox__title">Maecenas velit nunc, ultricies fringilla</h2>
-						<h3 class="infoBox__subtitle">Etiam tincidunt diam et nisl</h3>
-					</div>
-				</div>
-				<div class="slideBloc">
-					<img src="images/diaporama/diaporama5.jpeg" alt="">
-					<div class="hpViewer__infoBox">
-						<span class="infoBox__date">lorem ipsum</span>
-						<span class="infoBox__tag">Communication</span>
-						<h2 class="infoBox__title">Maecenas velit nunc, ultricies fringilla</h2>
-						<h3 class="infoBox__subtitle">Etiam tincidunt diam et nisl</h3>
-					</div>
-				</div>
-				<div class="slideBloc">
-					<img src="images/diaporama/diaporama6.jpeg" alt="">
-					<div class="hpViewer__infoBox">
-						<span class="infoBox__date">lorem ipsum</span>
-						<span class="infoBox__tag">Communication</span>
-						<h2 class="infoBox__title">Maecenas velit nunc, ultricies fringilla</h2>
-						<h3 class="infoBox__subtitle">Etiam tincidunt diam et nisl</h3>
-					</div>
-				</div>
-				<div class="slideBloc">
-					<img src="images/diaporama/diapoarma7.jpeg" alt="">
-					<div class="hpViewer__infoBox">
-						<span class="infoBox__date">lorem ipsum</span>
-						<span class="infoBox__tag">Communication</span>
-						<h2 class="infoBox__title">Maecenas velit nunc, ultricies fringilla</h2>
-						<h3 class="infoBox__subtitle">Etiam tincidunt diam et nisl</h3>
-					</div>
-				</div>
+				
+				<a href="#" class="btn">Slideshow</a>
 			</div>
 		</section>
-	<!-- Diaporama-->
+	<!-- / Diaporama-->
 		<section class="articlePage__body">
 			<div class="breadcrumb"></div>
 			<span class="articlePage__tag">Cote business</span>
@@ -160,12 +156,18 @@
 	
 	</div>
 	<footer class="footer">
-			<img src="images/footerLogo.png" alt="footerLogo" class="footer__logo">
-			<span class="footer__nav">CGU</span>
-			<span class="footer__nav">Mention legales</span>
-		</footer>
+		<img src="images/footerLogo.png" alt="footerLogo" class="footer__logo">
+		<div class="footer__nav">
+			<span >CGU</span>
+			<span>Mention legales</span>
+		</div>
+			
+	</footer>
 
 	</div>
+	<!--SCRIPT FILES-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+// //------------------------------
+// //--------- ARTICLE PAGE
+// //-----------------------------
+
+.articlePage {
+	&__head {
+		position: relative;
+	}
+	&__body {
+
+	}
+	.btn {
+		position: absolute;
+		top: 45.5%;
+		left: 44.5%;
+		padding: 2.2rem 4.2rem;
+		font-size: 1.6rem;
+		&:hover {
+			background-color: $c-yellow;
+			color: $c-black;
+		}
+	}
+}
