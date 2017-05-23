@@ -47,8 +47,8 @@
 		@include breakpoint(tablet) {
 			display: block;
 			float: left;
-			margin-top: 0.4rem;
-			margin-left: 6rem;
+			margin-top: 1.3rem;
+			margin-left: 4.2rem;
 			cursor: pointer;
 		}
 		@include breakpoint(mobile) {
@@ -60,18 +60,12 @@
 		}
 		.closeBtn {
 		    position: relative;
-			top: 0.7rem;
+			top: -0.3rem;
 			display: none;
 			width: 3rem;
-			@include breakpoint(mobile) {
-				top: -0.3rem;
-			}
 		}
 		img {
-			width: 5.3rem;
-			@include breakpoint(mobile) {
-				width: 3.3rem;
-			}
+			width: 3.3rem;
 		}
 	}
 
@@ -119,16 +113,13 @@
 	    right: 4rem;
 	    @include breakpoint(tablet) {
 	    	top: 3rem;
-	    	right: 6rem;
-	    }
-	    @include breakpoint(mobile) {
 	    	right: 3rem;
 	    }
 		img {
 			display: inline-block;
 			width: 1.6rem;
 			@include breakpoint(tablet) {
-				width: 3.5rem;
+				width: 3.3rem;
 			}
 			@include breakpoint(mobile) {
 				width: 3rem;

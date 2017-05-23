@@ -102,7 +102,8 @@
       slidesToShow: 5,
       slidesToScroll: 1,
       asNavFor: '.articleDiaporama__slider',  
-      centerMode: true,
+      // centerMode: true,
+      focusOnSelect: true,
       prevArrow: $('.diaporama-prev'),
       nextArrow: $('.diaporama-next')
     });

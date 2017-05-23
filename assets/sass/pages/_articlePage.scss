@@ -7,14 +7,43 @@
 		position: relative;
 	}
 	&__body {
-
+		@extend .mainContent;
+		padding-top: 5.5rem;
+		&__top {
+			padding-left: 9rem;
+		}
 	}
+	&__title {
+		margin-top: 3.5rem;
+		font-family: $baseFont--Black;
+		font-size: 5.4rem;
+		text-transform: uppercase;
+	}
+	&__tag {
+		padding: 1rem 2rem;
+		font-family: $baseFont--Bold;
+		font-size: 1.3rem;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
+		background-color: $c-yellow;
+	}
+	&__content {
+		width: 50%;
+		margin-left: 15rem;
+	} 
 	.btn {
 		position: absolute;
 		top: 45.5%;
 		left: 44.5%;
 		padding: 2.2rem 4.2rem;
 		font-size: 1.6rem;
+		@include breakpoint(tablet) {
+			top: 38%;
+			left: 29rem;
+		}
+		@include breakpoint(mobile) {
+			left: 22rem;
+		}
 		&:hover {
 			background-color: $c-yellow;
 			color: $c-black;

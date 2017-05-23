@@ -6,17 +6,35 @@
 	&__nav {
 		position: absolute;
 		bottom: 6.2rem;
-		width: 40%;
+		width: 43%;
 		height: 8.1rem;
-		left: 30%;
+		left: 29%;
+		@include breakpoint(tablet) {
+			width: 100%;
+			left: 0;
+			bottom: 40%;
+		}
+		@include breakpoint(mobile) {
+			bottom: 36%;
+		}
+		.slick-list {
+			padding: 0!important;
+		}
+		.slick-track {
+			position: relative;
+			left: 16.5rem;
+		}
 	}
 	.diaporama__thumbnails {
 		width: 85%;
 		margin: 0 auto;
 		height: 8.1rem;
 		overflow: hidden;
+		@include breakpoint(tablet) {
+			display: none;
+		}
 		.slick-current {
-			border: 0.1rem solid $c-yellow;
+			border: 0.3rem solid $c-yellow;
 		}
 
 		.thumbNail {
@@ -35,15 +53,30 @@
 		width: 3rem;
 		height: 3rem;
 		border-radius: 3rem;
+		@include breakpoint(mobile) {
+			display: block!important;
+			width: 5rem;
+		    height: 5rem;
+		    border-radius: 5rem;
+		}
 		.fontelloIcon {
 			top: 29%;
 			font-size: 1.5rem;
+			@include breakpoint(mobile) {
+			    font-size: 2rem;
+			}
 		}
 		&.diaporama-next {
 			right: 0;
+			@include breakpoint(tablet) {
+				right: 2.25rem;
+			}
 		}
 		&.diaporama-prev {
 			left: 0;
+			@include breakpoint(tablet) {
+				left: 2.5rem;
+			}
 		}
 	}
 
