@@ -6,14 +6,13 @@
 
 &.media--floatRight {
 	margin-bottom: 6rem;
-    @extend .wrapUp;
     @include breakpoint(tablet) {
     	padding-top: 6rem;
     	margin-bottom: 11.5rem;	
     }
     @include breakpoint(mobile) {
     	padding-top: 11rem;	
-    	margin-bottom: 8.5rem;
+    	margin-bottom: 4.5rem;
     }
 	.mediaWall__title {
 		top: 9rem;
@@ -27,6 +26,9 @@
 			left: 3.5rem;
 		}
 	}
+	article {
+		margin-bottom: 2rem;
+	}
 	.column--left {
 		position: relative;
 		left: 8rem;
@@ -37,6 +39,30 @@
 		}
 		@include breakpoint(mobile) {
 			margin-bottom: 0;
+			margin-bottom: 5rem;
+		}
+		&:nth-of-type(3) {
+			clear: both;
+			margin-top: 0rem;
+			.teaserPlain {
+				float: right;
+				margin-top: -8rem;
+				margin-right: 1.8rem;
+				@include breakpoint(tablet) {
+					margin-right: 0.6rem;
+				}
+			}
+		}
+		&.second-level {
+			@include breakpoint(mobile) {
+				float: left;
+				width: 50%;
+			}
+			.teaserPlain {
+				@include breakpoint(mobile) {
+					margin-top: 0;
+				}
+			}
 		}
 	}
 	.column--right {
@@ -47,10 +73,26 @@
 		@include breakpoint(mobile) {
 			padding-left: 0;
 		}
+		.teaserNarrow--middle {
+			margin-top: -8rem;
+		}
+		&.second-level {
+			@include breakpoint(mobile) {
+				width: 50%;
+			}
+			.teaserNarrow--middle {
+				@include breakpoint(mobile) {
+					margin-top: 0;
+					margin-left: 0.8rem;
+				}
+			}
+		
+		}
 	}
 
 	.teaserNarrow--middle {
 		margin-right: 2.3rem;
+		
 		@include breakpoint(tablet) {
 			margin-right: 1.2rem;
 		}

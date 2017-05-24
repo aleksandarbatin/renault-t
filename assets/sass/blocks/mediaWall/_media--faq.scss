@@ -5,9 +5,10 @@
  // HP faq slider with white smoke background
 
  &.media--faq {
-	margin-bottom: 15rem;
+	margin-bottom: 5rem;
+	padding-top: 10rem;
 	@include breakpoint(tablet) {
-		margin-bottom: 11rem;
+		padding-top: 6rem;
 	}
 	.container {
 		@include breakpoint(mobile) {
@@ -15,9 +16,10 @@
 		}
 	}
  	.mediaWall__title {
- 		top: -9rem;
+ 		position: static;
+ 		margin-bottom: 3rem;
  		@include breakpoint(tablet) {
- 			top: -5rem;
+ 			margin-bottom: 1rem;
  		}
  		@include breakpoint(mobile) {
  			position: static;

@@ -6,6 +6,11 @@
 
  &.media--wide {
  	padding-top: 0;
+ 	@extend .wrapUp;
+ 	margin-bottom: 6rem;
+ 	@include breakpoint(tablet) {
+ 		margin-bottom: 0;
+ 	}
  	.container {
  		@include breakpoint(mobile) {
  			width: 100%;
@@ -15,7 +20,7 @@
  		padding: 10rem 0 13.8rem;
     	overflow: hidden;
     	@include breakpoint(tablet) {
-    		padding: 5rem 0 10rem;
+    		padding: 5rem 0 19rem;
     	}
  	}
 
@@ -29,7 +34,7 @@
 		}
 		@include breakpoint(mobile) {
 			float: left;
-			margin-top: 5rem;
+			margin-top: -12rem;
 			margin-left: 3.5rem;
 		}
 		&:nth-of-type(1) {
@@ -45,6 +50,11 @@
 			@include breakpoint(mobile) {
 				margin-right: 0;
 				margin-left: 0;
+			}
+		} 
+		&:nth-of-type(3) {
+			@include breakpoint(mobile) {
+				margin-top: 0;
 			}
 		} 
 	}
