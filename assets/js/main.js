@@ -34,6 +34,33 @@
         nextArrow: $('.btn-next')
     });
 
+    if($(window).width() > 1023) {
+
+      $('.btn-next')
+      .mouseover (function(){
+        $(this).parent().find('.slick-track').animate({
+          left: "-13rem"
+        }, 600);
+      })
+      .mouseleave (function(){
+        $(this).parent().find('.slick-track').animate({
+          left: "0"
+        }, 300);
+      });
+
+      $('.btn-prev')
+      .mouseover (function(){
+        $(this).parent().find('.slick-track').animate({
+          left: "13rem"
+        }, 600);
+      })
+      .mouseleave (function(){
+        $(this).parent().find('.slick-track').animate({
+          left: "0"
+        }, 300);
+      });
+    }
+
     // #####################
     // FAQ SLIDER
 

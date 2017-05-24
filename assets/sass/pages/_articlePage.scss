@@ -8,10 +8,24 @@
 	}
 	&__body {
 		@extend .mainContent;
+		position: relative;
 		padding-top: 5.5rem;
+		margin-bottom: 7rem;
+		@include breakpoint(tablet) {
+			width: 73%;
+			padding-top: 5rem;
+		}
+		@include breakpoint(mobile) {
+			width: 89%;
+			padding-top: 4.5rem;
+		}
 		&__top {
 			padding-left: 9rem;
 			margin-bottom: 10rem;
+			@include breakpoint(tablet) {
+				margin-bottom: 0rem;
+				padding-left: 0;
+			}
 		}
 	}
 	&__title {
@@ -19,6 +33,14 @@
 		font-family: $baseFont--Black;
 		font-size: 5.4rem;
 		text-transform: uppercase;
+		@include breakpoint(tablet) {
+			margin-top: 1rem;
+			font-size: 3.2rem;
+		}
+		@include breakpoint(mobile) {
+			margin-top: 2.5rem;
+			font-size: 4rem;
+		}
 	}
 	&__tag {
 		padding: 1rem 2rem;
@@ -27,10 +49,21 @@
 		letter-spacing: 0.1rem;
 		text-transform: uppercase;
 		background-color: $c-yellow;
+		@include breakpoint(tablet) {
+			display: inline-block;
+			font-size: 1rem;
+		}
+		@include breakpoint(mobile) {
+			font-size: 1.4rem;
+		}
 	}
 	&__date {
 		font-size: 1rem;
 		color: $c-mediumGray;
+		@include breakpoint(mobile) {
+			font-size: 2.4rem;
+			letter-spacing: 0.1rem;
+		}
 	}
 	
 	.btn {
@@ -51,18 +84,211 @@
 			color: $c-black;
 		}
 	}
+
+	// MEDIA WALL - STEPS in article page
+
+	.mediaWall.media--steps {
+		@extend .mainContent;
+		height: auto;
+		margin-bottom: 10rem;
+		overflow: hidden;
+		@include breakpoint(tablet) {
+			width: 100%;
+		}
+		.container {
+			@extend .wrapUp;
+		}
+		.mediaWall__title {
+			top: 13.5rem;
+			left: 0.5rem;
+			@include breakpoint(tablet) {
+				top: 4.2rem;
+    			left: 6.5rem;
+			}
+			@include breakpoint(mobile) {
+				top: 16.2rem;
+				left: 3.5rem;
+			}
+		}
+		.column--left {
+			margin-top: 0;
+			@include breakpoint(tablet) {
+				width: 50%;
+			}
+			@include breakpoint(mobile) {
+				width: 100%;
+			}
+			.teaserPlain {
+				margin-top: 16rem;
+				margin-right: 2.3rem;
+				@include breakpoint(tablet) {
+					margin-top: 8rem;
+					margin-right: 1.2rem;
+					width: 15.3rem;
+				}
+				@include breakpoint(mobile) {
+					width: 20.3rem;
+					margin-top: 29rem;
+					margin-right: 1.4rem;
+				}
+				&:nth-of-type(2) {
+					margin-top: 0;
+					margin-right: 0;
+					@include breakpoint(mobile) {
+						width: 27.3rem;
+					}
+				}
+			}
+			.teaserNarrow--middle {
+				@include breakpoint(tablet) {
+					width: 15.3rem;
+				}
+				@include breakpoint(mobile) {
+					width: 34.3rem;
+				}
+			}
+			.teaserNarrow--middle:nth-of-type(1) {
+				margin-right: 2.3rem;
+				@include breakpoint(tablet) {
+					margin-right: 1.2rem;
+				}
+				@include breakpoint(mobile) {
+					width: 27.3rem;
+					margin-right: 1.4rem;
+				}
+			}
+		}
+		.teaserWide {
+			margin-left: 1.3rem;
+			@include breakpoint(tablet) {
+				margin-left: 0.7rem;
+			}
+		}
+		.column--right {
+			@include breakpoint(tablet) {
+				width: 50%;
+			}
+			@include breakpoint(mobile) {
+				width: 100%;
+			}
+			.teaserPlain {
+				margin-left: 1.3rem;
+				margin-right: 2.3rem;
+				@include breakpoint(mobile) {
+					width: 15.3rem;
+				}
+				@include breakpoint(tablet) {
+					margin-left: 0.7rem;
+					margin-right: 1.2rem;
+				}
+				@include breakpoint(mobile) {
+					width: 27.3rem;
+					margin-left: 0;
+					margin-right: 1.4rem;
+				}
+				&:nth-of-type(2) {
+					margin-right: 0;
+					margin-left: 0;
+				}
+			}
+		}
+	}
+	// TEST TEASER in Article page inside body
+	
+	.testTeaser {
+		position: absolute;
+		top: 46rem;
+		right: 8rem;
+		width: 30%;
+		height: 49rem;
+		background-size: cover;
+		@include breakpoint(tablet) {
+			position: relative;
+			top: auto;
+			left: -5rem;
+			width: 65rem;
+			height: 21rem;
+			margin-bottom: 12rem;
+		}
+		@include breakpoint(mobile) {
+			height: auto;
+		}
+		.test__introBox {
+			position: relative;
+			top: 6rem;
+			width: 70%;
+			margin-right: 5rem;
+			@include breakpoint(tablet) {
+				top: 0.5rem;
+				width: 50%;
+				margin: 0 auto;
+				padding-left: 6.5rem;
+				text-align: left;
+			}
+			@include breakpoint(mobile) {
+				width: 70%;
+				padding-left: 0;
+			}
+			.btn {
+				top: auto;
+				left: auto;
+				bottom: -6rem;
+				padding: 1.5rem 2.5rem;
+				font-size: 1.2rem;
+				@include breakpoint(tablet) {
+					position: static;
+					padding: 1rem 2rem;
+					font-size: 1rem;
+				}
+			}
+		}
+		.test__promo {
+			bottom: -6rem;
+			span {
+				display: none;
+			}
+			.promo__title {
+				font-size: 1.2rem;
+				@include breakpoint(tablet) {
+					font-size: 1.6rem;
+				}
+			}
+		}
+		.test__promo:nth-of-type(2) {
+		    left: 0%;
+		}
+	}
 }
+
+// ARTCILE CONTENT
 .articlePage__content {
 	width: 48%;
 	margin-left: 18rem;
-	&__intro {
+	@include breakpoint(tablet) {
+		width: 100%;
+		margin-top: 12rem;
+		margin-left: 0;
+		margin-bottom: 4rem;
+	}
+	@include breakpoint(mobile) {
+		margin-top: 15rem;
+		margin-bottom: 10rem;
+	}
+	.articlePage__content__intro {
 		margin-top: 1rem;
 		margin-bottom: 2rem;
-		p {
-			font-family: $baseFont--Black;
-			font-size: 1.8rem!important; 
-			line-height: 1.5!important;
-			margin-bottom: 0!important;
+		font-family: $baseFont--Black;
+		font-size: 1.8rem; 
+		line-height: 1.5;
+		@include breakpoint(tablet) {
+			margin-bottom: 4rem;
+			line-height: 1.4;
+		}
+		@include breakpoint(mobile) {
+			margin-top: 2.5rem;
+			margin-bottom: 6rem;
+			font-size: 2.8rem;
+			line-height: 1.5;
 		}
 	}
 	p {
@@ -70,12 +296,21 @@
 		font-size: 1.6rem;
 		line-height: 1.4;
 		color: $c-darkGrey; 
+		@include breakpoint(mobile) {
+			margin-bottom: 4rem;
+			font-size: 2.8rem;
+			line-height: 1.5;
+		}
 	}
 	&__tags {
 		margin-top: 3.5rem;
 		font-size: 1.25rem;
 		color: $c-yellow;
 		letter-spacing: 0.05rem;
+		@include breakpoint(mobile) {
+			margin-top: 5.5rem;
+			font-size: 2.8rem;
+		}
 		li {
 			margin-right: 0.1rem;
 		}

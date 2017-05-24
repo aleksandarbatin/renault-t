@@ -5,7 +5,7 @@
 .teaserNarrow {
 	width: 23rem;
 	@include breakpoint(tablet) {
-		width: 15.4rem;
+		width: 15.3rem;
 	}
 	@include breakpoint(mobile) {
 		width: 20rem;

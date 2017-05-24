@@ -3,6 +3,9 @@
 //---------------------------
 
 .stickySocial {
+	@include breakpoint(tablet) {
+		margin-left: 2rem;
+	}
 	li {
 		position: relative;
 		display: block;
@@ -12,21 +15,38 @@
 		border: 0.2rem solid $c-yellow;
 		background-color: $c-white;
 		z-index: 55;
+		@include breakpoint(tablet) {
+			display: inline-block;
+			margin-bottom: 0;
+			margin-right: 2rem;
+		}
+		@include breakpoint(mobile) {
+			width: 10rem;
+			height: 10rem;
+			margin-right: 3rem;
+
+		}
 	}
 	.fontelloIcon {
 		position: absolute;
 		top: 2rem;
 		left: 2rem;
-		font-size: 2.6rem;
+		font-size: 2.5rem;
 		color: $c-yellow;
+		@include breakpoint(mobile) {
+			top: 3.2rem;
+   			left: 3.2rem;
+   			font-size: 3.5rem;
+		}
 		&.icon-facebook {
+			top: 1.8rem;
 			left: 2.3rem;
-		}
-		&.icon-twitter {
-			font-size: 2.5rem;
-		}
-		&.mail {
-			font-size: 2.5rem;
+			font-size: 2.6rem;
+			@include breakpoint(mobile) {
+				top: 3rem;
+    			left: 3.6rem;
+    			font-size: 3.8rem;
+			}
 		}
 	}
 }
@@ -36,6 +56,14 @@
 	top: 3rem;
 	left: 0.5rem;
 	float: left;
+	@include breakpoint(tablet) {
+		float: none;
+		top: 4.5rem;
+		left: 0;
+	}
+	@include breakpoint(mobile) {
+		top: 6.5rem;
+	}
 	.whiteSmoke-bg {
 		position: absolute;
 		top: -3.5rem;
@@ -44,8 +72,27 @@
 		height: 33.5rem;
 		border: none;
 		background-color: $c-whiteSmoke;
-		z-index: -1;  	
+		z-index: -1;
+		@include breakpoint(tablet) {
+			width: 28.5rem;
+			height: 7.5rem;
+			top: 2.5rem;
+   			left: -2rem;
+		}  
+		@include breakpoint(mobile) {
+			width: 41rem;
+			height: 10.5rem;
+		}	
 	}
 }
+
+// .dw-sticked {
+// 	@include breakpoint(tablet) {
+// 		top: auto!important;
+// 		bottom: 0;
+// 		right: 0;
+// 	}
+
+// }
 
 

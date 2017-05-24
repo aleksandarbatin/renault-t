@@ -5,6 +5,9 @@
 .breadcrumbs {
 	font-size: 1.6rem;
 	margin-bottom: 6rem;
+	@include breakpoint(tablet) {
+		display: none;
+	}
 	li {
 		margin-right: 0.6rem;
 	}

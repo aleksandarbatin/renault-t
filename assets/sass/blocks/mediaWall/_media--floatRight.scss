@@ -42,7 +42,7 @@
 	.column--right {
 		padding-left: 9rem;
 		@include breakpoint(tablet) {
-			padding-left: 1rem;
+			padding-left: 0.8rem;
 		}
 		@include breakpoint(mobile) {
 			padding-left: 0;
