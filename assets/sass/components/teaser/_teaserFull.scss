@@ -10,6 +10,11 @@
 	margin-bottom: 0!important;
 	background-color: $c-white;
 	overflow: hidden;
+	&:hover {
+		.teaser__imgWrapper {
+			top: 0!important;
+		}
+	}
 	@include vendor-prefixes(box-shadow, -18px 23px 54px 6px rgba(64,64,64,0.65));
 	.teaser__imgWrapper {
 		float: right;
@@ -24,8 +29,8 @@
 	.teaser__introBox {
 		display: inline-block;
 		width: 25%;
-		padding-top: 14.5rem;
-		padding-left: 9rem;
+		padding-top: 12.5rem;
+    	padding-left: 6rem;
 		background-color: $c-white;
 		@include breakpoint(tablet) {
 			padding-left: 2rem;

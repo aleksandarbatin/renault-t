@@ -138,17 +138,19 @@
     // #####################
     // STICKY SOCIAL   
 
-    var $socialWrapper = $('.stickySocial__wrapper');
-        var $social = $('.stickySocial');
-        var $basement = $('.article-footer');
-        var $header = $('.header').outerHeight();
-        $socialWrapper.css({
-          width: $social.outerWidth(true),
-          height: $social.outerHeight(true)
-        });
+    if($(window).width() > 1023) {
+      var $socialWrapper = $('.stickySocial__wrapper');
+          var $social = $('.stickySocial');
+          var $basement = $('.article-footer');
+          var $header = $('.header').outerHeight();
+          $socialWrapper.css({
+            width: $social.outerWidth(true),
+            height: $social.outerHeight(true)
+          });
 
-    var offsetTop = $header + 40;
-    $social.dwSticky({$stEnd: $('.articlePage__content__tags'), offsetTop: offsetTop});
+      var offsetTop = $header + 40;
+      $social.dwSticky({$stEnd: $('.articlePage__content__tags'), offsetTop: offsetTop});
+    }
 
 
 })();

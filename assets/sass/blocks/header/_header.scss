@@ -7,6 +7,9 @@
 	z-index: 55;
 	&-holder {
 		height: 6.5rem;
+		svg {
+			width: 100%;
+		}
 		@include breakpoint(tablet) {
 			height: 8.5rem;
 		}

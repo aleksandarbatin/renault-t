@@ -1,0 +1,124 @@
+//---------------------------
+//-------- ARTICLE PAGE -- PROFILE
+//---------------------------
+
+.articlePage--profile {
+	@extend .articlePage;
+	.articlePage__profileImg {
+		width: 100%;
+	}
+	.articlePage__head {
+		height: auto;
+		float: left;
+		width: 69.2rem;
+		float: left;
+	    overflow: hidden;
+	    @include breakpoint(tablet) {
+			width: 56.6rem;
+			margin: 0 auto;
+			float: none;
+		}
+		@include breakpoint(mobile) {
+			width: 100%;
+		}
+	}
+	.articlePage__body {
+		@include breakpoint(exeptGadgets) {
+			display: inline-block;
+			width: 50%;
+			padding-top: 4rem;
+		}
+		&__top {
+			@include breakpoint(exeptGadgets) {
+				margin-bottom: 4.5rem;
+				padding-left: 8.5rem;
+			}
+		}
+	}
+	.articlePage__content {
+		@include breakpoint(exeptGadgets) {
+			width: 100%;
+			margin-top: 10.5rem;
+			margin-left: 8.5rem;
+			padding-right: 15rem;
+		}
+		
+		&__tags {
+			@include breakpoint(exeptGadgets) {
+				margin-left: 8.5rem;
+			}
+		}
+	}
+
+	.stickySocial__wrapper {
+		@include breakpoint(exeptGadgets) {
+			float: none;
+			top: 0;
+			left: 0;
+			margin-left: 9rem;
+		}
+		.whiteSmoke-bg {
+			@include breakpoint(exeptGadgets) {
+				width: 28.5rem;
+				height: 7.5rem;
+				top: 2.5rem;
+	   			left: -0.5rem;
+	   		}
+		}
+	}
+	.stickySocial {
+		margin-left: 2rem;
+		li {
+			display: inline-block;
+			margin-bottom: 0;
+			margin-right: 2rem;
+		}
+	}
+
+	.testTeaser {
+		@include breakpoint(exeptGadgets) {
+			max-width: 1350px;
+			width: 81%;
+			margin: 0 auto;
+			margin-bottom: 33.5rem;
+		}
+		.test__introBox {
+			.btn {
+				top: auto;
+				left: auto;
+				bottom: auto;
+				padding: 1.5rem 2.5rem;
+				font-size: 1.2rem;
+				@include breakpoint(tablet) {
+					position: static;
+					padding: 1rem 2rem;
+					font-size: 1rem;
+				}
+				@include breakpoint(mobile) {
+					padding: 2.2rem 2.5rem;	
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+	.articleDiaporama .btn {
+		top: 36.5%;
+    	left: 37.5%;
+	}
+	.articleDiaporama__nav {
+		position: relative;
+		left: 0;
+		bottom: 0;
+		height: 6.9rem;
+		width: 100%;
+	}
+	.articleDiaporama .diaporama__thumbnails {
+		height: 6.9rem;
+	}
+	.articleDiaporama .diaporama__thumbnails .thumbNail {
+	    width: 8.7rem!important;
+	    height: 6.9rem;
+	    margin: 0!important;
+	    margin-right: 1.5rem!important;
+	}
+}

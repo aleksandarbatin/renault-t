@@ -55,11 +55,10 @@
 	.slideInfo {
 		position: absolute;
 		left: 15.5%;
-		bottom: 20%;
+		bottom: 7%;
 		font-size: 2.2rem;
 		color: white;
 		@include breakpoint(tablet) {
-			bottom: 7%;
 			font-size: 1.2rem;
 		}
 		@include breakpoint(mobile) {

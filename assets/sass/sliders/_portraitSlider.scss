@@ -10,6 +10,11 @@
 	margin-top: 11.5rem;
 	margin-bottom: 0!important;
 	border: 2.3rem solid $c-yellow;
+	&:hover {
+		.teaser__imgWrapper {
+			top: 0!important;
+		}
+	}
 	@include breakpoint(tablet) {
 		width: 31.8rem;
 		margin-top: 6rem;

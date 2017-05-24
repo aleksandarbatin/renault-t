@@ -20,8 +20,18 @@
 	article {
 		float: left;
 		margin-bottom: 7.7rem;
+		cursor: pointer;
 		@include breakpoint(tablet) {
 			margin-bottom: 2rem;
+		}
+		&:hover {
+			@include breakpoint(exeptGadgets) {
+				@include transition (all 0.5 ease-in-out);
+				.teaser__imgWrapper {
+					top: -1.5rem;
+					
+				}
+			}
 		}
 	}
 
