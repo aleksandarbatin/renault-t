@@ -275,7 +275,7 @@ h1 {
 
 .header {
   padding: 2rem 0;
-  z-index: 55;
+  z-index: 5555;
   position: fixed;
   width: 100%;
   left: 0;
@@ -1931,6 +1931,7 @@ h1 {
     @media (min-width: 1024px) {
       .mostRead .slideBloc:hover img {
         filter: grayscale(0);
+        -ms-filter: grayscale(0);
         -webkit-transition: all 0.3s ease-in-out;
         -khtml-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
@@ -1939,7 +1940,8 @@ h1 {
         transition: all 0.3s ease-in-out; } }
     .mostRead .slideBloc img {
       margin-bottom: 2.5rem;
-      filter: grayscale(100%); }
+      filter: grayscale(100%);
+      -ms-filter: grayscale(100%); }
       @media (max-width: 1023px) {
         .mostRead .slideBloc img {
           margin-bottom: 1rem; } }
@@ -2291,7 +2293,8 @@ h1 {
       top: 0;
       left: 0; }
     .articlePage__content .videoWrapper .iframe-placeholder {
-      width: 100%; }
+      width: 100%;
+      height: 37.4rem; }
 
 .articlePage--profile .articlePage__profileImg {
   width: 100%; }
