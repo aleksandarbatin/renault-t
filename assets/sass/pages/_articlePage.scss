@@ -5,6 +5,7 @@
 .articlePage {
 	&__head {
 		position: relative;
+		z-index: -1;
 		&__description {
 			position: absolute;
 			right: 0;

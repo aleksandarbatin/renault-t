@@ -1490,7 +1490,8 @@ h1 {
   display: none; }
 
 .hpViewer {
-  position: relative; }
+  position: relative;
+  z-index: 0; }
   .hpViewer__arrows, .articleDiaporama .diaporama__arrows, .mostRead__slider__arrows {
     position: absolute;
     top: 50%;
@@ -1963,7 +1964,8 @@ h1 {
         font-size: 2.6rem; } }
 
 .articlePage__head {
-  position: relative; }
+  position: relative;
+  z-index: -1; }
   .articlePage__head__description {
     position: absolute;
     right: 0;
