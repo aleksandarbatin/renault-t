@@ -432,7 +432,13 @@ h1 {
       display: none;
       font-size: 1.5rem;
       margin-right: 3rem;
-      color: #ffcc33; }
+      color: #ffcc33;
+      -webkit-transition: all 0.3s ease-in-out;
+      -khtml-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
       @media (max-width: 1023px) {
         .header__navigation .down-open {
           display: inline-block; } }
@@ -462,20 +468,22 @@ h1 {
         font-size: 2.8rem; } }
     .header__navigation > .menu span {
       cursor: pointer; }
-    .header__navigation > .menu:hover span {
-      color: #fff;
-      border-bottom: 0.15rem solid #fff;
-      -webkit-transition: all 0.3s ease-in-out;
-      -khtml-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
-      @media (max-width: 1023px) {
-        .header__navigation > .menu:hover span {
-          color: #000; } }
-    .header__navigation > .menu:hover .navigation__submenu {
-      display: block; }
+    @media (min-width: 1024px) {
+      .header__navigation > .menu:hover span {
+        color: #fff;
+        border-bottom: 0.15rem solid #fff;
+        -webkit-transition: all 0.3s ease-in-out;
+        -khtml-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; } }
+    @media (max-width: 1023px) {
+      .header__navigation > .menu:hover span {
+        color: #000; } }
+    @media (min-width: 1024px) {
+      .header__navigation > .menu:hover .navigation__submenu {
+        display: block; } }
     .header__navigation > .menu .navigation__submenu {
       display: none;
       width: 100%;
@@ -569,6 +577,13 @@ h1 {
           display: table-cell;
           vertical-align: top;
           width: 6.8rem; }
+  .header .rotateArrow {
+    -webkit-transform: rotate(180deg);
+    -khtml-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
 
 .footer {
   text-align: center;

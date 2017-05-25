@@ -152,5 +152,13 @@
       $social.dwSticky({$stEnd: $('.articlePage__content__tags'), offsetTop: offsetTop});
     }
 
+    // ##############################
+    // ARROW DOWN ROTATE DEVICES MENU 
+
+    $(".header__navigation>.menu").on("click", function(){
+      $(this).find(".down-open").toggleClass("rotateArrow");
+      $(this).find(".navigation__submenu").toggle();
+    }); 
+
 
 })();

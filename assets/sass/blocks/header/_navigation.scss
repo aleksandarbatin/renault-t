@@ -59,6 +59,7 @@
 		font-size: 1.5rem;
 		margin-right: 3rem;
 		color: $c-yellow;
+		@include transition (all 0.3s ease-in-out);
 		@include breakpoint(tablet) {
 			display: inline-block;
 		}
@@ -96,15 +97,19 @@
 	}
 	&:hover  {
 		span {
+			@include breakpoint(exeptGadgets){
 			color: $c-white;
 			border-bottom: 0.15rem solid $c-white;
 			@include transition (all 0.3s ease-in-out);
+			}
 			@include breakpoint(tablet) {
 				color: $c-black;
 			}
 		}
 		.navigation__submenu {
-			display: block;
+			@include breakpoint(exeptGadgets) {
+				display: block;
+			}
 		}
 	}
 
@@ -214,4 +219,13 @@
 			}
 		}
 	}
+}
+
+.rotateArrow {
+	-webkit-transform: rotate(180deg);
+    -khtml-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
