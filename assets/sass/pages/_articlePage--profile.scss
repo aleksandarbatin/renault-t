@@ -102,6 +102,7 @@
 		}
 	}
 	.articleDiaporama .btn {
+		display: none;
 		top: 36.5%;
     	left: 37.5%;
 	}
@@ -111,14 +112,42 @@
 		bottom: 0;
 		height: 6.9rem;
 		width: 100%;
+		@include breakpoint(mobile) {
+			position: static;
+		}
+		.diaporama__arrows {
+			top: 16rem;
+			width: 3rem;
+			height: 3rem;
+			border-radius: 3rem;
+			margin-bottom: 2rem;
+			.fontelloIcon {
+				font-size: 1rem;
+			}
+		}
 	}
 	.articleDiaporama .diaporama__thumbnails {
 		height: 6.9rem;
+		@include breakpoint(tablet) {
+			display: block;
+			width: 78%;
+		}
+		@include breakpoint(mobile) {
+			display: none;
+		}
 	}
 	.articleDiaporama .diaporama__thumbnails .thumbNail {
 	    width: 8.7rem!important;
 	    height: 6.9rem;
 	    margin: 0!important;
 	    margin-right: 1.5rem!important;
+	    @inlude breakpoint(tablet) {
+
+	    }
+	}
+	.articlePage__head__description {
+		bottom: 2rem;
+		margin-bottom: 0;
+		padding: 1rem 2rem;
 	}
 }
