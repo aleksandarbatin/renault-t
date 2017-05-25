@@ -1,23 +1,43 @@
-<snippet>
-  <content>
-# ${1:SASS structure}
-TODO: Write a project description
-## Installation
-TODO: Describe the installation process
-## Usage
-TODO: Write usage instructions
-## Contributing
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
-## History
-TODO: Write history
-## Credits
-TODO: Write credits
-## License
-TODO: Write license
-</content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
+# SASS STRUCTURE and NAMING CONVENTION
+
+To build SASS I used BUILDING BLOCKS logic and BEM methodology naming convention.
+## BUILDING BLOCKS
+
+
+## BEM methodology
+
+https://en.bem.info/methodology/
+
+To try how it works you need to have NODE.js and GULP installed on your machine and simply do 
+
+```
+git clone https://github.com/aleksandarbatin/renault-t.git
+cd renault-t
+npm install
+```
+All files used for building project are in /assets folder. You can see there that I'm using SASS for preprocesing CSS. Inside SASS folder see readme file for explanation of logic that I used for css naming convention and files structure.
+
+## Running the project
+
+As a part of GULP workflow there are some basic tasks like: 
+
+#gulp-sass - for compiling Sass into CSS.
+
+#gulp-plumber - prevent pipe breaking caused by errors from gulp plugins
+
+#gulp-uglufy - minifies all .js files.
+
+#gulp-minify-css - minifies all CSS files.
+
+#gulp-imagemin - to optimize images using imageoptim and jpegmini
+
+#gulp-watch - watches for changes to file content and then executes gulp tasks when a change is detected. Watch is useful for tasks like continuous unit testing (every time you save a file, that new file is tested), refreshing your browser automatically when changes are reflected, or compiling preprocessing languages like Sass or Jade into CSS or HTML.
+
+#browser-sync - keep multiple browsers & devices in sync when building websites.
+
+To run and test project or work on it you just need command
+
+```
+gulp
+```
+Enjoy it!
