@@ -141,7 +141,7 @@
     if($(window).width() > 1023) {
       var $socialWrapper = $('.stickySocial__wrapper');
           var $social = $('.stickySocial');
-          var $basement = $('.article-footer');
+          var $basement = $('.articlePage__content__tags');
           var $header = $('.header').outerHeight();
           $socialWrapper.css({
             width: $social.outerWidth(true),

@@ -2379,10 +2379,8 @@ h1 {
     display: inline-block;
     margin-bottom: 0;
     margin-right: 2rem; }
-  .articlePage--profile .stickySocial.dw-stciked {
-    left: 20rem;
-    top: auto !important;
-    bottom: 5rem; }
+  .articlePage--profile .stickySocial.dw-sticked {
+    left: 20rem; }
 
 @media (min-width: 1024px) {
   .articlePage--profile .testTeaser, .articlePage--profile .testTeaser--article {
