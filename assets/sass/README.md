@@ -1,43 +1,34 @@
 # SASS STRUCTURE and NAMING CONVENTION
 
 To build SASS I used BUILDING BLOCKS logic and BEM methodology naming convention.
+
 ## BUILDING BLOCKS
 
+Basic building blocks here are actually are components and blocks. Blocks represent big unity that conists many small parts.
+For example HEADER and FOOTER and in this case mediaWALL all of them are complex unity that unite smaller parts that can exist only in them or anywhere on the site.
+These small parts can also be COMPONENTS.
 
-## BEM methodology
+BLOCKS: header, footer, mainWall
+
+## COMPONETS
+
+Componets are small pieces of blocks usually. They are cells of project that are repeated in many places of course with modification which is realized through the block to which they belong.
+
+Here main components are TEASER they are small unity consisting of usually: image, title, text and some other elements and all of them calling (teas) or refer to the content that is in them.
+
+COMPONETS: teaser/, breadcrumb, btn, commonStyle, sliderNavigation, stickySocial
+
+## BEM METODOLOGY
+
+BEM stands for “Block”, “Element”, “Modifier”. The BEM methodology is a popular naming convention for classes in HTML and CSS. 
 
 https://en.bem.info/methodology/
 
-To try how it works you need to have NODE.js and GULP installed on your machine and simply do 
+Main principles:
 
-```
-git clone https://github.com/aleksandarbatin/renault-t.git
-cd renault-t
-npm install
-```
-All files used for building project are in /assets folder. You can see there that I'm using SASS for preprocesing CSS. Inside SASS folder see readme file for explanation of logic that I used for css naming convention and files structure.
+#.block (independent entity, a “building block” of an application. A block can be either simple or compound (containing other blocks).)
 
-## Running the project
+#.block__element (An element is a part of a block. Elements are context-dependent: they only make sense in the context of the block that they belong to.)
 
-As a part of GULP workflow there are some basic tasks like: 
+#.block__element--modifier (A Modifier is a property of a block or an element that alters its look or behavior. A modifier has both a name and a value.)
 
-#gulp-sass - for compiling Sass into CSS.
-
-#gulp-plumber - prevent pipe breaking caused by errors from gulp plugins
-
-#gulp-uglufy - minifies all .js files.
-
-#gulp-minify-css - minifies all CSS files.
-
-#gulp-imagemin - to optimize images using imageoptim and jpegmini
-
-#gulp-watch - watches for changes to file content and then executes gulp tasks when a change is detected. Watch is useful for tasks like continuous unit testing (every time you save a file, that new file is tested), refreshing your browser automatically when changes are reflected, or compiling preprocessing languages like Sass or Jade into CSS or HTML.
-
-#browser-sync - keep multiple browsers & devices in sync when building websites.
-
-To run and test project or work on it you just need command
-
-```
-gulp
-```
-Enjoy it!
