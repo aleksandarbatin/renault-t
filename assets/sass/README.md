@@ -10,13 +10,13 @@ These small parts can also be COMPONENTS (acutally if parts exist not only in on
 ```
 BLOCKS: header, footer, mainWall
 ```
-## COMPONETS
+## COMPONENTS
 
 Componets are small pieces of blocks usually. They are cells of project that are repeated in many places of course with modification which is realized through the block to which they belong.
 
 Here main components are TEASER they are small unity consisting of usually: image, title, text and some other elements and all of them calling (tease) or refer to the content that is in them.
 ```
-COMPONETS: teaser/, breadcrumb, btn, commonStyle, sliderNavigation, stickySocial
+COMPONENTS: teaser/, breadcrumb, btn, commonStyle, sliderNavigation, stickySocial
 ```
 ## BEM METODOLOGY
 
