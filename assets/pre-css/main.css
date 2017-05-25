@@ -149,19 +149,19 @@ input[type="search"]::-webkit-search-cancel-button {
 
 @font-face {
   font-family: "Lato-Regular";
-  src: url("/fonts/Lato-Regular.eot?") format("eot"), url("/fonts/Lato-Regular.woff") format("woff"), url("/fonts/Lato-Regular.ttf") format("truetype"); }
+  src: url("/fonts/Lato-Regular.eot?") format("eot"), url("/fonts/Lato-Regular.woff") format("woff"), url("/fonts/Lato-Regular.ttf") format("truetype"), url("/fonts/Lato-Regular.otf") format("opentype"); }
 
 @font-face {
   font-family: "Lato-Bold";
-  src: url("/fonts/Lato-Bold.eot?") format("eot"), url("/fonts/Lato-Bold.woff") format("woff"), url("/fonts/Lato-Bold.ttf") format("truetype"); }
+  src: url("/fonts/Lato-Bold.eot?") format("eot"), url("/fonts/Lato-Bold.woff") format("woff"), url("/fonts/Lato-Bold.ttf") format("truetype"), url("/fonts/Lato-Bold.otf") format("opentype"); }
 
 @font-face {
   font-family: "Lato-Black";
-  src: url("/fonts/Lato-Black.eot?") format("eot"), url("/fonts/Lato-Black.woff") format("woff"), url("/fonts/Lato-Black.ttf") format("truetype"); }
+  src: url("/fonts/Lato-Black.eot?") format("eot"), url("/fonts/Lato-Black.woff") format("woff"), url("/fonts/Lato-Black.ttf") format("truetype"), url("/fonts/Lato-Black.otf") format("opentype"); }
 
 @font-face {
   font-family: "Airways";
-  src: url("/fonts/Airways.eot?") format("eot"), url("/fonts/Airways.woff") format("woff"), url("/fonts/Airways.ttf") format("truetype"); }
+  src: url("/fonts/Airways.eot?") format("eot"), url("/fonts/Airways.woff") format("woff"), url("/fonts/Airways.ttf") format("truetype"), url("/fonts/Airways.otf") format("opentype"); }
 
 @font-face {
   font-family: "fontello";
