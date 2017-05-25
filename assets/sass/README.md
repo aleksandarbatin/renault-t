@@ -1,5 +1,5 @@
 <snippet>
-  <content><![CDATA[
+  <content>
 # ${1:SASS structure}
 TODO: Write a project description
 ## Installation
@@ -18,6 +18,6 @@ TODO: Write history
 TODO: Write credits
 ## License
 TODO: Write license
-]]></content>
+</content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
