@@ -2356,7 +2356,7 @@ h1 {
     width: 28.5rem;
     height: 7.5rem;
     top: 2.5rem;
-    left: -0.5rem; } }
+    left: -2rem; } }
 
 .articlePage--profile .stickySocial {
   margin-left: 2rem; }
@@ -2364,6 +2364,10 @@ h1 {
     display: inline-block;
     margin-bottom: 0;
     margin-right: 2rem; }
+  .articlePage--profile .stickySocial.dw-stciked {
+    left: 20rem;
+    top: auto !important;
+    bottom: 5rem; }
 
 @media (min-width: 1024px) {
   .articlePage--profile .testTeaser, .articlePage--profile .testTeaser--article {
