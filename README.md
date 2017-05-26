@@ -19,6 +19,8 @@ As a part of GULP workflow there are some basic tasks like:
 
 #gulp-sass - for compiling Sass into CSS.
 
+#gulp-pug - Pug (or ex Jade) preprocessor for HTML enable you ease control of HTML templates when you write lot of static code
+
 #gulp-plumber - prevent pipe breaking caused by errors from gulp plugins
 
 #gulp-uglufy - minifies all .js files.
