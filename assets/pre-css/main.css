@@ -405,7 +405,8 @@ h1 {
           width: 30%;
           position: absolute;
           right: 0;
-          background-color: rgba(0, 0, 0, 0.5); } }
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 5; } }
     @media (max-width: 1023px) and (max-width: 767px) {
       .header__navigation__curtain {
         width: 15%; } }
