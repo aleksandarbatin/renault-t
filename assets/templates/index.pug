@@ -1,0 +1,39 @@
+doctype html
+html(lang='en')
+  include head/head
+  body
+    // HEADER
+    include header/header
+    // /HEADER
+    .siteWrapper
+      // HP viewer
+      include hpViewer/hpViewer
+      // /HP viewer
+      main.mainContent
+        // MEDIA WALL
+        //-MEDIA WALL - steps
+        include mediaWall/mediaWall-steps 
+        //-MEDIA WALL - wide      
+        include mediaWall/mediaWall-wide
+        //-MEDIA WALL - floatRight
+        include mediaWall/mediaWall-floatRight
+        //-MEDIA WALL - faq
+        include mediaWall/mediaWall-faq
+        //-MEDIA WALL - business
+        include mediaWall/mediaWall-business
+        // /MEDIA WALL
+
+        // TEST teaser
+        include teaser/testTeaser
+        // /TEST teaser
+
+      // MOST READ
+      include slider/mostreadSlider
+      // /MOST READ
+      include footer/footer
+      // FOOTER
+      
+    // SCRIPT FILES
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='js/slick.min.js')
+    script(src='js/main.js')

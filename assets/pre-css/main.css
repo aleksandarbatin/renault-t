@@ -1980,7 +1980,7 @@ h1 {
 
 .articlePage__head {
   position: relative;
-  z-index: -1; }
+  z-index: 0; }
   .articlePage__head__description {
     position: absolute;
     right: 0;

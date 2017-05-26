@@ -1,0 +1,161 @@
+doctype html
+html(lang='en')
+  include head/head
+  body
+    .siteWrapper
+      // HEADER
+      include header/header
+      // /HEADER
+      .articlePage
+        // Diaporama
+        section.articlePage__head
+          include slider/articleDiaporama
+          span.articlePage__head__description Lorem ipsum dolor sit amet, consectetur adipisicing elit
+        // / Diaporama
+        section.articlePage__body
+          .articlePage__body__top
+            ul.breadcrumbs
+              li Accueil
+              li >
+              li Cote business
+              li >
+              li A quel moment puls-je pretendre au offers formule flotte chez mon assureur
+            span.articlePage__tag Cote business
+            h2.articlePage__title A quel moment puis-je pretendre au offres «formule flotte» chez mon assureur
+          .stickySocial__wrapper
+            ul.stickySocial.sticky
+              li
+                i.fontelloIcon.icon-facebook &#xf30c;
+              li
+                i.fontelloIcon.icon-twitter &#xf099;
+              li
+                i.fontelloIcon.mail &#xe804;
+              li.whiteSmoke-bg
+          // Article Page content
+          main.articlePage__content
+            span.articlePage__date lundi 12 octobre 2017
+            p.articlePage__content__intro
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet maximus ante. Aliquam ut felis sodales, vulputate nulla in, varius arcu. Integer dictum magna eu velit fermentum, sed fringilla diam tristique. Pellentesque tempor tempus justo quis volutpat. Nunc tincidunt scelerisque cursus. Praesent urna ipsum, porttitor ac leo id, porta lobortis lectus. Cras congue pretium tortor et malesuada.
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet maximus ante. Aliquam ut felis sodales, vulputate nulla in, varius arcu. Integer dictum magna eu velit fermentum, sed fringilla diam tristique. Pellentesque tempor tempus justo quis volutpat. Nunc tincidunt scelerisque cursus. Praesent urna ipsum, porttitor ac leo id, porta lobortis lectus. Cras congue pretium tortor et malesuada. Mauris vitae urna sit amet velit volutpat ultricies. In vehicula tincidunt risus, vitae feugiat justo convallis vitae. Vestibulum eu fermentum felis. In vitae sodales urna.
+            p
+              | In gravida lacinia massa, non iaculis eros feugiat et. Création d’entreprise Integer porta dolor ac ex pretium, sed blandit urna pretium. Donec in semper neque, bibendum commodo ante. Nullam tincidunt tincidunt mattis. Sed quis justo nisi. Integer tristique libero ut tempor mollis. Phasellus et nibh vulputate, scelerisque tellus a, gravida magna. Donec pretium, metus eget accumsan ultricies, quam diam aliquet nisi, vitae facilisis enim lorem dignissim sapien. Morbi a risus aliquet, maximus ipsum sit amet, placerat velit. Sed porttitor mi mauris, eu convallis mi feugiat vel. Suspendisse convallis sodales tortor.
+            p
+              | Nullam ligula nunc, interdum ut neque eu, tristique dapibus metus. Cras elementum, elit vel pretium vehicula, turpis urna hendrerit lectus, at bibendum turpis lorem at diam. Pellentesque mattis mauris ac tempus condimentum. Duis volutpat, leo a aliquet consectetur, est odio pulvinar neque, vel volutpat lorem eros eget erat. Praesent Statut juridique. Donec ac elit pharetra, bibendum ante eu, tristique justo. Sed diam nulla, sagittis et augue eget, fringilla semper urna. In in quam sit amet sem sodales maximus ac nec nulla. Aenean ornare vitae ante eu varius. Nam tellus ante, gravida nec massa in, volutpat pharetra sem. Vestibulum convallis tristique ante, a venenatis enim elementum id.
+            p
+              | Praesent varius semper metus eu bibendum. Sed consequat lacus vel porttitor molestie. In maximus neque pharetra, laoreet enim quis, laoreet metus. Cras at felis consectetur, tincidunt felis accumsan, scelerisque urna. Pellentesque sit amet euismod justo. Vestibulum ut dapibus magna. Curabitur ac viverra justo. Nam diam nunc, elementum nec eros et, feugiat egestas nulla. Cras condimentum mauris sed interdum aliquam. Quisque in enim non mi porta lobortis vitae nec justo. Integer ullamcorper eleifend fermentum. Praesent molestie interdum ex, eu suscipit orci volutpat eu. Phasellus lobortis diam sit amet sapien pulvinar, a blandit nulla consequat. Fusce ut convallis massa. Donec velit velit, dapibus sit amet egestas vel, venenatis at nisl.
+            p
+              | Ut vestibulum risus ac ipsum bibendum facilisis. Vivamus condimentum ullamcorper lectus. Donec pellentesque lectus nibh, ut facilisis ex eleifend gravida. In quis arcu eu nibh venenatis convallis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut ac erat tellus. Quisque arcu est, tristique ut libero
+            ul.articlePage__content__tags
+              li Tags:
+              li Lorem
+              li -
+              li Ipsum
+              li -
+              li Dolor
+          // TEST teaser
+          section.testTeaser--article
+            .container
+              .test__introBox
+                h2.test__title
+                  span.strong
+                    | Quel vehicule 
+                    br
+                  span.style est falt 
+                  | pour vous?
+                p.test__text
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. A dolor velit dolores vel, quod quos consequatur assumenda odit, maiores, perspiciatis molestias illum.
+                a.btn(href='#') Commencer le test
+              .test__promo
+                img(src='images/carsTest1.png', alt='car1')
+                h4.promo__title Kangooze
+                span L'utilitaire autrament
+              .test__promo
+                img(src='images/carsTest2.png', alt='car2')
+                h4.promo__title Traffic
+                span L'utilitaire autrament
+              .test__promo
+                img(src='images/carsTest3.png', alt='car3')
+                h4.promo__title Master fourgon
+                span L'utilitaire autrament
+          // /TEST teaser
+        // MEDIA WALL
+        section.mediaWall.media--steps
+          .container
+            h2.mediaWall__title
+              span.strong
+                | Articles 
+                br
+              span.style lies 
+            .mediaWall__column.column--left
+              article.teaserPlain
+                .teaser__imgWrapper
+                  img(src='images/teaserPlain1.jpg', alt='')
+                  span.teaser__tag Fan de vu
+                .teaser__introBox
+                  h3.teaser__title Lorem ipsum dolor sit amet, consectetur adipisicing
+                  p.teaser__text
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sed ut, consectetur nisi qui autem. Sequi tempore beatae aspernatur obcaecati ad tempora quas, amet quam ullam culpa porro, consectetur, officiis!
+              article.teaserNarrow--middle
+                .teaser__imgWrapper
+                  img(src='images/teaserNarrow-middle.jpg', alt='')
+                  span.teaser__tag Fan de vu
+                .teaser__introBox
+                  h3.teaser__title Lorem ipsum dolor sit amet, consectetur adipisicing
+                  p.teaser__text
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sed ut, consectetur nisi qui autem. Sequi tempore beatae aspernatur obcaecati ad tempora quas, amet quam ullam culpa porro, consectetur, officiis!
+            .mediaWall__column.column--right
+              article.teaserWide
+                .teaser__imgWrapper
+                  img(src='images/teaserWide.jpg', alt='')
+                  span.teaser__tag Fan de vu
+                .teaser__introBox
+                  h3.teaser__title
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing ad tempora quas, amet quam ullam culpa porro
+                  p.teaser__text
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sed ut, consectetur nisi qui autem. Sequi tempore beatae aspernatur obcaecati ad tempora quas, amet quam ullam culpa porro, consectetur, officiis!
+          .container
+            .mediaWall__column.column--left
+              article.teaserNarrow--middle
+                .teaser__imgWrapper
+                  img(src='images/teaserNarrow-middle.jpg', alt='')
+                  span.teaser__tag Fan de vu
+                .teaser__introBox
+                  h3.teaser__title Lorem ipsum dolor sit amet, consectetur adipisicing
+                  p.teaser__text
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sed ut, consectetur nisi qui autem. Sequi tempore beatae aspernatur obcaecati ad tempora quas, amet quam ullam culpa porro, consectetur, officiis!
+              article.teaserPlain
+                .teaser__imgWrapper
+                  img(src='images/teaserPlain1.jpg', alt='')
+                  span.teaser__tag Fan de vu
+                .teaser__introBox
+                  h3.teaser__title Lorem ipsum dolor sit amet, consectetur adipisicing
+                  p.teaser__text
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sed ut, consectetur nisi qui autem. Sequi tempore beatae aspernatur obcaecati ad tempora quas, amet quam ullam culpa porro, consectetur, officiis!
+            .mediaWall__column.column--right
+              article.teaserPlain
+                .teaser__imgWrapper
+                  img(src='images/teaserPlain1.jpg', alt='')
+                  span.teaser__tag Fan de vu
+                .teaser__introBox
+                  h3.teaser__title Lorem ipsum dolor sit amet, consectetur adipisicing
+                  p.teaser__text
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sed ut, consectetur nisi qui autem. Sequi tempore beatae aspernatur obcaecati ad tempora quas, amet quam ullam culpa porro, consectetur, officiis!
+              article.teaserPlain
+                .teaser__imgWrapper
+                  img(src='images/teaserPlain2.jpg', alt='')
+                  span.teaser__tag Fan de vu
+                .teaser__introBox
+                  h3.teaser__title Lorem ipsum dolor sit amet, consectetur adipisicing
+                  p.teaser__text
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam sed ut, consectetur nisi qui autem. Sequi tempore beatae aspernatur obcaecati ad tempora quas, amet quam ullam culpa porro, consectetur, officiis!
+        // MOST READ
+        include slider/mostreadSlider
+        // /MOST READ
+      // FOOTER
+      include footer/footer
+    // SCRIPT FILES
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+    script(src='js/diwanee-sticky.js')
+    script(src='js/slick.min.js')
+    script(src='js/main.js')

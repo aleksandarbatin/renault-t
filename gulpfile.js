@@ -14,6 +14,7 @@ var uglify = require('gulp-uglify');
 var minifyCSS = require('gulp-minify-css');
 var imagemin = require('gulp-imagemin');
 var browserSync = require("browser-sync");
+var pug = require('gulp-pug');
 var reload = browserSync.reload;
 
 // /////////////////////////////////////////////////
@@ -41,6 +42,18 @@ gulp.task('styles', function(){
 });
 
 // /////////////////////////////////////////////////
+// PUG - HTML preprocessor
+// /////////////////////////////////////////////////
+
+gulp.task('pug', function(){
+  gulp.src('./assets/templates/*.pug')
+  .pipe(pug({
+    pretty: true
+  }))
+  .pipe(gulp.dest('./dist'))
+})
+
+// /////////////////////////////////////////////////
 // HTML Task
 // /////////////////////////////////////////////////
 
@@ -66,7 +79,7 @@ gulp.task('browser-sync', function(){
 // /////////////////////////////////////////////////
 gulp.task('watch', function(){
   gulp.watch('assets/sass/**/*.scss', ['styles']); 
-  gulp.watch("dist/**/*.html",['html']);
+  gulp.watch('assets/templates/*.pug', ['pug']);
 });
 
 // /////////////////////////////////////////////////
@@ -84,4 +97,4 @@ gulp.task('uglify', function(){
 // Default Task
 // /////////////////////////////////////////////////
 
-gulp.task('default',[ 'styles', 'uglify','html', 'browser-sync', 'watch' ]);
+gulp.task('default',[ 'styles', 'uglify', 'pug', 'html', 'browser-sync', 'watch' ]);
